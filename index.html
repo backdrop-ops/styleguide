@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" class="js">
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="Generator" content="Drupal 8 (http://drupal.org)" />
+  <title>Style guide | backdrop</title>
+  <style media="all" type="text/css">
+    @import url("core/modules/system/system.base.css");
+    @import url("core/modules/system/system.theme.css");
+    @import url("core/misc/ui/jquery.ui.core.css");
+    @import url("core/themes/seven/jquery.ui.theme.css");
+    @import url("core/misc/ui/jquery.ui.button.css");
+    @import url("core/misc/ui/jquery.ui.resizable.css");
+    @import url("core/misc/ui/jquery.ui.dialog.css");
+    @import url("core/misc/dialog.theme.css");
+    @import url("core/misc/dropbutton.css");
+    @import url("core/misc/dropbutton.theme.css");
+    @import url("core/themes/seven/vertical-tabs.css");
+    @import url("core/modules/field/theme/field.css");
+    @import url("core/modules/user/user.css");
+    @import url("core/modules/views/css/views.css");
+    @import url("core/modules/file/file.admin.css");
+    @import url("core/modules/filter/filter.css");
+    @import url("modules/styleguide/styleguide.css");
+    @import url("core/modules/toolbar/toolbar.css");
+    @import url("core/themes/seven/reset.css");
+    @import url("core/themes/seven/style.css");
+  </style>
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="core/themes/seven/ie.css" media="all" />
+  <![endif]-->
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="core/misc/html5.js?v=11"></script>
+  <![endif]-->
+  <script type="text/javascript" src="core/misc/jquery.js"></script>
+  <script type="text/javascript" src="core/misc/jquery.once.js"></script>
+  <script type="text/javascript" src="core/misc/drupal.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.core.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.widget.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.button.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.mouse.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.draggable.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.position.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.resizable.min.js"></script>
+  <script type="text/javascript" src="core/misc/ui/jquery.ui.dialog.min.js"></script>
+  <script type="text/javascript" src="core/misc/dialog.js"></script>
+  <script type="text/javascript" src="core/misc/jquery.form.js"></script>
+  <script type="text/javascript" src="core/misc/dropbutton.js"></script>
+  <script type="text/javascript" src="core/misc/vertical-tabs.js"></script>
+  <script type="text/javascript" src="core/misc/jquery.cookie.js"></script>
+  <script type="text/javascript" src="core/misc/form.js"></script>
+  <script type="text/javascript" src="core/misc/ajax.js"></script>
+  <script type="text/javascript">
+  <!--//--><![CDATA[//><!--
+  // Open the dialog with jQuery UI.
+  jQuery(document).ready(function() { jQuery("#styleguide-dialog").dialog({ title: "Dialog title", position: { within: "#styleguide-dialog-wrapper" }, draggable: false, open: function() { window.scrollTo(0, 0); } }); });
+  //--><!-->
+  </script>
+  <script type="text/javascript" src="core/misc/tableheader.js"></script><script type="text/javascript" src="core/misc/autocomplete.js"></script><script type="text/javascript" src="core/misc/machine-name.js"></script><script type="text/javascript" src="core/misc/textarea.js"></script><script type="text/javascript" src="core/misc/progress.js"></script><script type="text/javascript" src="core/modules/file/file.js"></script><script type="text/javascript" src="core/modules/user/user.js"></script><script type="text/javascript" src="core/misc/collapse.js"></script><script type="text/javascript" src="core/modules/filter/filter.js"></script><script type="text/javascript"><!--//--><![CDATA[//><!--
+  jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"seven","theme_token":"_MWay5kk5C7C_XCQXcGRSHXwwqrLWhPSLwj4sz6gKzk","js":{"core\/misc\/html5.js":1,"core\/misc\/jquery.js":1,"core\/misc\/jquery.once.js":1,"core\/misc\/drupal.js":1,"core\/misc\/ui\/jquery.ui.core.min.js":1,"core\/misc\/ui\/jquery.ui.widget.min.js":1,"core\/misc\/ui\/jquery.ui.button.min.js":1,"core\/misc\/ui\/jquery.ui.mouse.min.js":1,"core\/misc\/ui\/jquery.ui.draggable.min.js":1,"core\/misc\/ui\/jquery.ui.position.min.js":1,"core\/misc\/ui\/jquery.ui.resizable.min.js":1,"core\/misc\/ui\/jquery.ui.dialog.min.js":1,"core\/misc\/dialog.js":1,"core\/misc\/jquery.form.js":1,"core\/misc\/dropbutton.js":1,"core\/misc\/vertical-tabs.js":1,"core\/misc\/jquery.cookie.js":1,"core\/misc\/form.js":1,"core\/misc\/ajax.js":1,"0":1,"core\/misc\/tableheader.js":1,"core\/misc\/autocomplete.js":1,"core\/misc\/machine-name.js":1,"core\/misc\/textarea.js":1,"core\/misc\/progress.js":1,"core\/modules\/file\/file.js":1,"core\/modules\/user\/user.js":1,"core\/misc\/collapse.js":1,"core\/modules\/filter\/filter.js":1},"css":{"core\/modules\/system\/system.base.css":1,"core\/modules\/system\/system.theme.css":1,"core\/misc\/ui\/jquery.ui.core.css":1,"core\/misc\/ui\/jquery.ui.theme.css":1,"core\/misc\/ui\/jquery.ui.button.css":1,"core\/misc\/ui\/jquery.ui.resizable.css":1,"core\/misc\/ui\/jquery.ui.dialog.css":1,"core\/misc\/dialog.theme.css":1,"core\/misc\/dropbutton.css":1,"core\/misc\/dropbutton.theme.css":1,"core\/misc\/vertical-tabs.css":1,"core\/modules\/field\/theme\/field.css":1,"core\/modules\/user\/user.css":1,"core\/modules\/views\/css\/views.css":1,"core\/modules\/file\/file.admin.css":1,"core\/modules\/filter\/filter.css":1,"modules\/styleguide\/styleguide.css":1,"core\/modules\/toolbar\/toolbar.css":1,"core\/themes\/seven\/reset.css":1,"core\/themes\/seven\/style.css":1,"core\/themes\/seven\/ie.css":1}},"machineName":{"#edit-textfield-machine":{"exists":"styleguide_machine_name_exists","source":["textfield-machine"],"target":"#edit-machine-name","label":"Machine name","replace_pattern":"[^a-z0-9_]+","replace":"_","standalone":false,"field_prefix":"","field_suffix":"","suffix":"#edit-textfield-machine-machine-name-suffix"}},"ajax":{"edit-managed-file-upload-button":{"wrapper":"edit-managed-file-ajax-wrapper","effect":"fade","progress":{"type":"throbber","message":null},"event":"mousedown","keypress":true,"prevent":"click","url":"\/file\/ajax\/managed_file\/form-8a6A48f_mf0sZLscW9xE5eLl6v5zpjjnafEPtTrTWdw","submit":{"_triggering_element_name":"managed_file_upload_button","_triggering_element_value":"Upload"}}},"password":{"strengthTitle":"Password strength:","hasWeaknesses":"To make your password stronger:","tooShort":"Make it at least 6 characters","addLowerCase":"Add lowercase letters","addUpperCase":"Add uppercase letters","addNumbers":"Add numbers","addPunctuation":"Add punctuation","sameAsUsername":"Make it different from your username","confirmSuccess":"yes","confirmFailure":"no","weak":"Weak","fair":"Fair","good":"Good","strong":"Strong","confirmTitle":"Passwords match:","username":"nate"}});
+  //--><!-->
+  </script>
+</head>
+
+<body class="html not-front logged-in no-sidebars page-admin page-admin-appearance page-admin-appearance-styleguide page-admin-appearance-styleguide-seven toolbar dropbutton-click-processed" style="">
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
+  <div class="region region-page-top">
+    <nav id="toolbar" class="toolbar clearfix" role="navigation">
+      <div class="toolbar-menu clearfix">
+        <ul id="toolbar-home">
+          <li class="home odd first last"><a href="/" title="Home"><span class="home-link">Home</span></a></li>
+        </ul>
+        <ul id="toolbar-user">
+          <li class="account odd first"><a href="/user" title="User account">Hello <strong>nate</strong></a></li>
+          <li class="logout even last"><a href="/user/logout">Log out</a></li>
+        </ul>
+        <h2 class="element-invisible">Administrative toolbar</h2>
+        <ul id="toolbar-menu">
+          <li class="menu-9-path-admin-content odd first"><a href="/admin/content" id="toolbar-link-admin-content" title="Find and manage content.">Content <span class="element-invisible">(Find and manage content.)</span></a></li>
+          <li class="menu-19-path-admin-structure even"><a href="/admin/structure" id="toolbar-link-admin-structure" title="Administer blocks, content types, menus, etc.">Structure <span class="element-invisible">(Administer blocks, content types, menus, etc.)</span></a></li>
+          <li class="menu-7-path-admin-appearance-active-trail odd"><a href="/admin/appearance" id="toolbar-link-admin-appearance" title="Select and configure your themes.">Appearance <span class="element-invisible">(Select and configure your themes.)</span></a></li>
+          <li class="menu-16-path-admin-people even"><a href="/admin/people" id="toolbar-link-admin-people" title="Manage user accounts, roles, and permissions.">People <span class="element-invisible">(Manage user accounts, roles, and permissions.)</span></a></li>
+          <li class="menu-14-path-admin-modules odd"><a href="/admin/modules" id="toolbar-link-admin-modules" title="Extend site functionality.">Modules <span class="element-invisible">(Extend site functionality.)</span></a></li>
+          <li class="menu-8-path-admin-config even"><a href="/admin/config" id="toolbar-link-admin-config" title="Administer settings.">Configuration <span class="element-invisible">(Administer settings.)</span></a></li>
+          <li class="menu-17-path-admin-reports odd last"><a href="/admin/reports" id="toolbar-link-admin-reports" title="View reports, updates, and errors.">Reports <span class="element-invisible">(View reports, updates, and errors.)</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="branding" class="clearfix">
+    <nav class="breadcrumb" role="navigation">
+      <h2 class="element-invisible">You are here</h2>
+      <ol>
+        <li><a href="/">Home</a> »</li>
+        <li><a href="/admin">Administration</a> »</li>
+        <li><a href="/admin/appearance" title="Select and configure your themes.">Appearance</a> »</li>
+        <li><a href="/admin/appearance/styleguide">Style guide</a></li>
+      </ol>
+      <h1 class="page-title">Style guide
+    </nav>
+    </h1>
+    <h2 class="element-invisible">Primary tabs</h2>
+    <ul class="tabs primary">
+      <li><a href="/admin/appearance/styleguide">Bartik</a></li>
+      <li class="active"><a href="admin/appearance/styleguide/seven" class="active">Seven<span class="element-invisible">(active tab)</span></a></li>
+    </ul>
+  </div>
+  <div id="page">
+    <div class="tabs-secondary clearfix"></div>
+    <div id="content" class="clearfix">
+      <div class="element-invisible"><a id="main-content"></a></div>
+      <div class="region region-content">
+        <div id="block-system-main" class="block block-system">
+          <div class="content">
+            <h2>Showing style guide for <em class="placeholder">Seven</em></h2>
+            <p>A simple one-column, tableless, fluid width administration theme.</p>
+            <h2 class="styleguide">Link</h2>
+            <div class="styleguide">Dictum eu malesuada <a href="/node">feugiat aliquam velit</a> sit convallis auctor in.</div>
+            <a name="b"></a>
+            <h2 class="styleguide">B</h2>
+            <div class="styleguide">Erat amet et <b>vulputate luctus accumsan</b> luctus nunc vestibulum id.</div>
+            <a name="del"></a>
+            <h2 class="styleguide">Delete</h2>
+            <div class="styleguide">Aliquam lobortis lacinia <del>in magna luctus</del> nam sed consequat consequat.</div>
+            <a name="em"></a>
+            <h2 class="styleguide">Emphasis</h2>
+            <div class="styleguide">Dui lorem convallis <em>nec dignissim dignissim</em> aliquam convallis nam lacinia.</div>
+            <a name="figcaption"></a>
+            <h2 class="styleguide">Figcaption</h2>
+            <div class="styleguide">Fusce magna sed mi et tempor ut enim convallis et.</div>
+            <a name="figure"></a>
+            <h2 class="styleguide">Figure</h2>
+            <div class="styleguide">Erat erat tempor dolor tempor est orci sit velit elementum.</div>
+            <a name="hr"></a>
+            <h2 class="styleguide">hr</h2>
+            <div class="styleguide">
+              Egestas aliquam vitae
+              <hr />
+              sed a venenatis turpis eu amet viverra.
+            </div>
+            <a name="i"></a>
+            <h2 class="styleguide">Italic</h2>
+            <div class="styleguide">Convallis ut erat <i>fusce porta convallis</i> tempor feugiat et convallis.</div>
+            <a name="q"></a>
+            <h2 class="styleguide">Quote</h2>
+            <div class="styleguide">Convallis in auctor <q>enim accumsan eros</q> viverra mi tempor consequat.</div>
+            <a name="s"></a>
+            <h2 class="styleguide">Strikethrough</h2>
+            <div class="styleguide">Dui convallis felis <s>ante a iaculis</s> elementum urna convallis tempor.</div>
+            <a name="small"></a>
+            <h2 class="styleguide">Small</h2>
+            <div class="styleguide">Et massa sed <small>vulputate sit tempor</small> fusce feugiat magna neque.</div>
+            <a name="strong"></a>
+            <h2 class="styleguide">Strong</h2>
+            <div class="styleguide">Ante magna est <strong>magna eget porta</strong> turpis magna iaculis in.</div>
+            <a name="sub"></a>
+            <h2 class="styleguide">Subscript</h2>
+            <div class="styleguide">Egestas ac ac <sub>fusce</sub> feugiat iaculis fusce fusce.</div>
+            <a name="sup"></a>
+            <h2 class="styleguide">Superscript</h2>
+            <div class="styleguide">Sed vulputate ipsum <sup>in</sup> egestas vulputate viverra sed.</div>
+            <a name="u"></a>
+            <h2 class="styleguide">Underline</h2>
+            <div class="styleguide">Aliquam ac egestas <u>nam massa consequat</u> tempor duis a elit.</div>
+            <a name="status-message"></a>
+            <h2 class="styleguide">Status message</h2>
+            <div class="styleguide">
+              <div class="messages status">
+                <h2 class="element-invisible">Status message</h2>
+                Morbi eget odio elit, et cursus odio.
+              </div>
+            </div>
+            <a name="warning-message"></a>
+            <h2 class="styleguide">Warning message</h2>
+            <div class="styleguide">
+              <div class="messages warning">
+                <h2 class="element-invisible">Status message</h2>
+                Nam tincidunt dictum molestie.
+              </div>
+            </div>
+            <a name="error-message"></a>
+            <h2 class="styleguide">Error message</h2>
+            <div class="styleguide">
+              <div class="messages error">
+                <h2 class="element-invisible">Status message</h2>
+                Quisque a velit diam.
+              </div>
+            </div>
+            <a name="ul"></a>
+            <h2 class="styleguide">Unordered list</h2>
+            <div class="styleguide">
+              <div class="item-list">
+                <ul>
+                  <li class="odd first">Vitae vulputate et</li>
+                  <li class="even">Nisl viverra malesuada</li>
+                  <li class="odd">Nec a convallis</li>
+                  <li class="even">Velit viverra feugiat</li>
+                  <li class="odd last">Elit ut nam</li>
+                </ul>
+              </div>
+            </div>
+            <a name="ol"></a>
+            <h2 class="styleguide">Ordered list</h2>
+            <div class="styleguide">
+              <div class="item-list">
+                <ol>
+                  <li class="odd first">A et vitae</li>
+                  <li class="even">Lorem enim lorem</li>
+                  <li class="odd">Consequat amet fusce</li>
+                  <li class="even">Id dui lorem</li>
+                  <li class="odd last">Felis a amet</li>
+                </ol>
+              </div>
+            </div>
+            <a name="ul_title"></a>
+            <h2 class="styleguide">Unordered list, with title</h2>
+            <div class="styleguide">
+              <div class="item-list">
+                <h3>Sed elit et</h3>
+                <ul>
+                  <li class="odd first">A elit convallis</li>
+                  <li class="even">Velit erat dignissim</li>
+                  <li class="odd">Malesuada ut turpis</li>
+                  <li class="even">Accumsan est dictum</li>
+                  <li class="odd last">Mattis iaculis aliquam</li>
+                </ul>
+              </div>
+            </div>
+            <a name="ol_title"></a>
+            <h2 class="styleguide">Ordered list, with title</h2>
+            <div class="styleguide">
+              <div class="item-list">
+                <h3>Erat dui nec</h3>
+                <ol>
+                  <li class="odd first">Ante dolor cras</li>
+                  <li class="even">Convallis ante gravida</li>
+                  <li class="odd">Nam ac luctus</li>
+                  <li class="even">A iaculis lacinia</li>
+                  <li class="odd last">Ac tincidunt ut</li>
+                </ol>
+              </div>
+            </div>
+            <a name="table"></a>
+            <h2 class="styleguide">Table</h2>
+            <div class="styleguide">
+              <table class="sticky-header" style="position: fixed; top: 0px; left: 40px; visibility: hidden;">
+                <thead style="">
+                  <tr>
+                    <th>Convallis sed eget</th>
+                    <th>Dui id et</th>
+                    <th>Aliquam nunc eu</th>
+                    <th>Velit est nam</th>
+                    <th>Dignissim luctus elementum</th>
+                  </tr>
+                </thead>
+              </table>
+              <table class="sticky-enabled tableheader-processed sticky-table">
+                <caption>aliquam elementum duis</caption>
+                <thead>
+                  <tr>
+                    <th>Convallis sed eget</th>
+                    <th>Dui id et</th>
+                    <th>Aliquam nunc eu</th>
+                    <th>Velit est nam</th>
+                    <th>Dignissim luctus elementum</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="odd">
+                    <td>Lorem magna magna </td>
+                    <td>Ante neque elit </td>
+                    <td>Sit dignissim nunc </td>
+                    <td>Magna ante vestibulum </td>
+                    <td>Elit et nam </td>
+                  </tr>
+                  <tr class="even">
+                    <td>Eros neque eros </td>
+                    <td>Sed nec elementum </td>
+                    <td>Nam dignissim accumsan </td>
+                    <td>Ac massa lacinia </td>
+                    <td>Egestas eu aliquam </td>
+                  </tr>
+                  <tr class="odd">
+                    <td>Pellentesque velit malesuada </td>
+                    <td>Lacus a nam </td>
+                    <td>Tincidunt luctus erat </td>
+                    <td>Est nec in </td>
+                    <td>Aliquam luctus velit </td>
+                  </tr>
+                  <tr class="even">
+                    <td>Enim tortor dignissim </td>
+                    <td>Sed vestibulum neque </td>
+                    <td>Amet erat convallis </td>
+                    <td>Turpis velit aliquam </td>
+                    <td>Dignissim orci malesuada </td>
+                  </tr>
+                  <tr class="odd">
+                    <td>Vestibulum iaculis in </td>
+                    <td>Porta ac a </td>
+                    <td>Iaculis fusce consectetur </td>
+                    <td>Nam et velit </td>
+                    <td>Amet egestas enim </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a name="blockquote"></a>
+            <h2 class="styleguide">Blockquote</h2>
+            <div class="styleguide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+              </blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+            </div>
+            <a name="headings"></a>
+            <h2 class="styleguide">Headings</h2>
+            <div class="styleguide">
+              <h1>h1: Dictum eu nam Orci erat pellentesque Nam amet nunc Lacinia massa tortor Elementum eget aliquam</h1>
+              <h2>h2: Tempor magna iaculis Turpis nisl egestas Et felis amet Iaculis auctor convallis Vitae pellentesque consequat</h2>
+              <h3>h3: Enim sed est Erat nam et Dictum eu ac Erat mattis nam Cras viverra mi</h3>
+              <h4>h4: Elementum dictum cras Nec euismod neque Elementum eu nisl Convallis ac luctus Magna dolor erat</h4>
+              <h5>h5: Egestas velit in Amet nec accumsan Euismod ut tempor Venenatis consectetur in Lacinia consectetur felis</h5>
+              <h6>h6: Sit lacinia viverra Auctor malesuada a Tortor accumsan velit Sit lacus vitae Sit convallis nec</h6>
+            </div>
+            <a name="monospace"></a>
+            <h2 class="styleguide">Monospace</h2>
+            <div class="styleguide"><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</code></div>
+            <a name="form"></a>
+            <h2 class="styleguide">Forms, basic</h2>
+            <div class="styleguide">
+              <form enctype="multipart/form-data" action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form" accept-charset="UTF-8">
+                <div>
+                  <div class="form-item form-type-select form-item-select">
+                    <label for="edit-select">Select</label> 
+                    <select id="edit-select" name="select" class="form-select">
+                      <option value="Felis convallis magna">Felis convallis magna</option>
+                      <option value="Enim magna sit">Enim magna sit</option>
+                      <option value="Aliquam duis lacus">Aliquam duis lacus</option>
+                      <option value="Magna nisl luctus">Magna nisl luctus</option>
+                      <option value="Lacinia accumsan eros">Lacinia accumsan eros</option>
+                    </select>
+                    <div class="description">Vestibulum sit amet massa est.</div>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-checkbox">
+                    <input type="checkbox" id="edit-checkbox" name="checkbox" value="1" checked="checked" class="form-checkbox" /> <label class="option" for="edit-checkbox">Checkbox</label>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                  <div class="form-item form-type-checkboxes form-item-checkboxes">
+                    <label for="edit-checkboxes">Checkboxes</label>
+                    <div id="edit-checkboxes" class="form-checkboxes">
+                      <div class="form-item form-type-checkbox form-item-checkboxes-Felis-convallis-magna"><input type="checkbox" id="edit-checkboxes-felis-convallis-magna" name="checkboxes[Felis convallis magna]" value="Felis convallis magna" class="form-checkbox" /> <label class="option" for="edit-checkboxes-felis-convallis-magna">Felis convallis magna</label></div>
+                      <div class="form-item form-type-checkbox form-item-checkboxes-Enim-magna-sit"><input type="checkbox" id="edit-checkboxes-enim-magna-sit" name="checkboxes[Enim magna sit]" value="Enim magna sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-enim-magna-sit">Enim magna sit</label></div>
+                      <div class="form-item form-type-checkbox form-item-checkboxes-Aliquam-duis-lacus"><input type="checkbox" id="edit-checkboxes-aliquam-duis-lacus" name="checkboxes[Aliquam duis lacus]" value="Aliquam duis lacus" class="form-checkbox" /> <label class="option" for="edit-checkboxes-aliquam-duis-lacus">Aliquam duis lacus</label></div>
+                      <div class="form-item form-type-checkbox form-item-checkboxes-Magna-nisl-luctus"><input type="checkbox" id="edit-checkboxes-magna-nisl-luctus" name="checkboxes[Magna nisl luctus]" value="Magna nisl luctus" class="form-checkbox" /> <label class="option" for="edit-checkboxes-magna-nisl-luctus">Magna nisl luctus</label></div>
+                      <div class="form-item form-type-checkbox form-item-checkboxes-Lacinia-accumsan-eros"><input type="checkbox" id="edit-checkboxes-lacinia-accumsan-eros" name="checkboxes[Lacinia accumsan eros]" value="Lacinia accumsan eros" class="form-checkbox" /> <label class="option" for="edit-checkboxes-lacinia-accumsan-eros">Lacinia accumsan eros</label></div>
+                    </div>
+                    <div class="description">Donec magna est, sollicitudin vel ultrices vel, mattis ut odio.</div>
+                  </div>
+                  <div class="form-item form-type-radios form-item-radios">
+                    <label for="edit-radios">Radios</label>
+                    <div id="edit-radios" class="form-radios">
+                      <div class="form-item form-type-radio form-item-radios"><input type="radio" id="edit-radios-felis-convallis-magna" name="radios" value="Felis convallis magna" class="form-radio" /> <label class="option" for="edit-radios-felis-convallis-magna">Felis convallis magna</label></div>
+                      <div class="form-item form-type-radio form-item-radios"><input type="radio" id="edit-radios-enim-magna-sit" name="radios" value="Enim magna sit" class="form-radio" /> <label class="option" for="edit-radios-enim-magna-sit">Enim magna sit</label></div>
+                      <div class="form-item form-type-radio form-item-radios"><input type="radio" id="edit-radios-aliquam-duis-lacus" name="radios" value="Aliquam duis lacus" class="form-radio" /> <label class="option" for="edit-radios-aliquam-duis-lacus">Aliquam duis lacus</label></div>
+                      <div class="form-item form-type-radio form-item-radios"><input type="radio" id="edit-radios-magna-nisl-luctus" name="radios" value="Magna nisl luctus" class="form-radio" /> <label class="option" for="edit-radios-magna-nisl-luctus">Magna nisl luctus</label></div>
+                      <div class="form-item form-type-radio form-item-radios"><input type="radio" id="edit-radios-lacinia-accumsan-eros" name="radios" value="Lacinia accumsan eros" class="form-radio" /> <label class="option" for="edit-radios-lacinia-accumsan-eros">Lacinia accumsan eros</label></div>
+                    </div>
+                    <div class="description">Praesent porttitor ante non lacus suscipit porta.</div>
+                  </div>
+                  <div class="form-item form-type-textfield form-item-textfield">
+                    <label for="edit-textfield">Textfield</label> <input type="text" id="edit-textfield" name="textfield" value="Egestas erat orci" size="60" maxlength="128" class="form-text" />
+                    <div class="description">Integer vel felis laoreet purus sollicitudin varius sed id ipsum.</div>
+                  </div>
+                  <div class="form-item form-type-textfield form-item-disabled form-disabled">
+                    <label for="edit-disabled">Disabled</label> <input disabled="disabled" type="text" id="edit-disabled" name="disabled" value="Massa aliquam nunc" size="60" maxlength="128" class="form-text" />
+                    <div class="description">Aliquam dui dolor, ullamcorper eget rutrum ut, hendrerit ac lorem.</div>
+                  </div>
+                  <div class="form-item form-type-textfield form-item-autocomplete" role="application">
+                    <label for="edit-autocomplete">Autocomplete textfield</label> <input type="text" id="edit-autocomplete" name="autocomplete" value="accumsan" size="60" maxlength="128" class="form-text form-autocomplete" autocomplete="OFF" aria-autocomplete="list" /><input type="hidden" id="edit-autocomplete-autocomplete" value="user/autocomplete" disabled="disabled" class="autocomplete autocomplete-processed" />
+                    <div class="description">Nam tincidunt dictum molestie.</div>
+                    <span class="element-invisible" aria-live="assertive" id="edit-autocomplete-autocomplete-aria-live"></span>
+                  </div>
+                  <div class="form-item form-type-textfield form-item-textfield-machine">
+                    <label for="edit-textfield-machine">Textfield, with machine name</label> <input type="text" id="edit-textfield-machine" name="textfield-machine" value="Vestibulum elementum iaculis" size="60" maxlength="128" class="form-text machine-name-source" /> <span class="field-suffix"><small id="edit-textfield-machine-machine-name-suffix"><span class="machine-name-label">Machine name:</span> <span class="machine-name-value">vestibulum_elementum_iaculis</span> <span class="admin-link"><a href="#">Edit</a></span></small></span>
+                    <div class="description">Praesent porttitor ante non lacus suscipit porta.</div>
+                  </div>
+                  <div class="form-item form-type-machine-name form-item-machine-name" style="display: none;">
+                    <label for="edit-machine-name">Machine name <abbr class="form-required" title="This field is required.">*</abbr></label> <input dir="ltr" type="text" id="edit-machine-name" name="machine_name" value="" size="60" maxlength="64" class="form-text required machine-name-target" />
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                  <div class="form-item form-type-textarea form-item-textarea">
+                    <label for="edit-textarea">Textarea</label>
+                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                      <textarea id="edit-textarea" name="textarea" rows="5" cols="60" class="form-textarea">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.&lt;/p&gt;&lt;p&gt;Vivamus pretium placerat lorem, in tempor massa convallis sit amet. Aliquam sed quam eget ligula luctus aliquam sed vitae nulla. Aliquam dui dolor, ullamcorper eget rutrum ut, hendrerit ac lorem. Donec magna est, sollicitudin vel ultrices vel, mattis ut odio. Integer vel felis laoreet purus sollicitudin varius sed id ipsum. Suspendisse potenti. Praesent ut justo vitae metus luctus vehicula a et purus. Suspendisse potenti. Sed viverra, quam non hendrerit laoreet, massa odio blandit arcu, ac molestie metus diam eu tortor. Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu. Mauris eros quam, varius eget volutpat vel, tristique sed est. In faucibus feugiat urna sit amet elementum. Integer consequat rhoncus libero, in molestie augue posuere et. Phasellus ac eleifend magna. Proin vulputate dui ac justo pharetra consequat. In vel iaculis ligula.&lt;/p&gt;&lt;p&gt;Cras vestibulum lacus sit amet sem commodo ullamcorper aliquet eros vestibulum. Sed fermentum nulla quis risus suscipit dapibus. Sed vitae velit ut dolor varius semper at id lectus. Aenean quis leo sit amet tellus tempus cursus. Vivamus semper vehicula ante eget semper. In ac ipsum erat. Suspendisse lectus erat, commodo nec fringilla quis, interdum non leo. Vivamus et lectus vitae risus porta sollicitudin luctus eget est. Etiam quis elit vel est suscipit tristique. Nullam fringilla purus ac velit gravida ullamcorper. Praesent porttitor ante non lacus suscipit porta. Nunc fermentum sem et metus aliquam ultricies non sollicitudin nibh. Vestibulum ut ligula dolor, in placerat tortor. Sed nec lacus sed nibh iaculis luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur rutrum, diam vel tempor commodo, augue nunc viverra risus, in pellentesque neque justo eget dolor. Maecenas quis odio leo, a auctor lorem.&lt;/p&gt;&lt;p&gt;Curabitur dapibus odio quis enim hendrerit eu placerat lorem accumsan. Phasellus sagittis, orci vel laoreet molestie, urna orci imperdiet elit, quis ultricies orci mauris vel ante. Cras pharetra, nisl a sagittis feugiat, turpis magna placerat sem, sed euismod erat elit in magna. Phasellus blandit ullamcorper diam vel porta. Vivamus mollis, metus nec tincidunt venenatis, risus odio sodales risus, vitae ultrices est nisi eget ante. Aenean eget nisi mi. Nulla non nulla nec metus rhoncus congue. Curabitur quis nunc nibh. Cras metus lorem, euismod ornare mattis sagittis, ultrices eget turpis. Integer quis dui tellus. Morbi vel dolor sit amet metus eleifend fringilla. Fusce nunc neque, ultricies et commodo semper, dignissim vitae tortor. Phasellus et ipsum quis sapien accumsan auctor. Morbi congue nulla vel tortor aliquet imperdiet. Morbi eget odio elit, et cursus odio. Quisque a velit diam. Duis urna libero, tempus non mattis a, convallis ac erat. Etiam vel dui posuere lectus auctor viverra vitae id eros. Maecenas mollis eros non elit sollicitudin quis fermentum diam lacinia. Quisque at ante nibh, a molestie ligula.&lt;/p&gt;&lt;p&gt;Sed et enim nunc, nec vehicula sem. Sed risus orci, auctor et dictum at, hendrerit eu augue. Curabitur sed ante non quam fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt dictum molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus nec urna ut lorem tempus aliquet eget nec lectus. Phasellus quis venenatis tortor. Integer elementum, sapien at feugiat cursus, tortor sapien adipiscing massa, non molestie elit lacus vel velit. Suspendisse sit amet sem id libero auctor pharetra sit amet ut dui. Aenean sit amet tellus sit amet ante congue faucibus. Nullam hendrerit, justo et iaculis tristique, ligula risus pretium erat, sed tempus lacus felis ut nulla.&lt;/p&gt;</textarea>
+                      <div class="grippie"></div>
+                    </div>
+                    <div class="description">Aenean eget nisi mi.</div>
+                  </div>
+                  <div class="form-item form-type-date form-item-date">
+                    <label for="edit-date">Date</label>
+                    <div id="edit-date" class="container-inline">
+                      <div class="form-item form-type-select form-item-date-month">
+                        <label class="element-invisible" for="edit-date-month">Month</label> 
+                        <select id="edit-date-month" name="date[month]" class="form-select">
+                          <option value="1">Jan</option>
+                          <option value="2">Feb</option>
+                          <option value="3">Mar</option>
+                          <option value="4">Apr</option>
+                          <option value="5" selected="selected">May</option>
+                          <option value="6">Jun</option>
+                          <option value="7">Jul</option>
+                          <option value="8">Aug</option>
+                          <option value="9">Sep</option>
+                          <option value="10">Oct</option>
+                          <option value="11">Nov</option>
+                          <option value="12">Dec</option>
+                        </select>
+                      </div>
+                      <div class="form-item form-type-select form-item-date-day">
+                        <label class="element-invisible" for="edit-date-day">Day</label> 
+                        <select id="edit-date-day" name="date[day]" class="form-select">
+                          <option value="1">1</option>
+                          <option value="2" selected="selected">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                      </div>
+                      <div class="form-item form-type-select form-item-date-year">
+                        <label class="element-invisible" for="edit-date-year">Year</label> 
+                        <select id="edit-date-year" name="date[year]" class="form-select">
+                          <option value="2010">2010</option>
+                          <option value="2011">2011</option>
+                          <option value="2012">2012</option>
+                          <option value="2013">2013</option>
+                          <option value="2014" selected="selected">2014</option>
+                          <option value="2015">2015</option>
+                          <option value="2016">2016</option>
+                          <option value="2017">2017</option>
+                          <option value="2018">2018</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="description">Nullam hendrerit, justo et iaculis tristique, ligula risus pretium erat, sed tempus lacus felis ut nulla.</div>
+                  </div>
+                  <div class="form-item form-type-file form-item-files-file">
+                    <label for="edit-file">File</label> <input type="file" id="edit-file" name="files[file]" size="60" class="form-file" />
+                    <div class="description">Phasellus sagittis, orci vel laoreet molestie, urna orci imperdiet elit, quis ultricies orci mauris vel ante.</div>
+                  </div>
+                  <div id="edit-managed-file-ajax-wrapper">
+                    <div class="form-item form-type-managed-file form-item-managed-file">
+                      <label for="edit-managed-file">Managed file</label>
+                      <div id="edit-managed-file" class="form-managed-file"><input type="file" id="edit-managed-file-upload" name="files[managed_file]" size="22" class="form-file" /><input type="submit" id="edit-managed-file-upload-button" name="managed_file_upload_button" value="Upload" class="form-submit ajax-processed" /><input type="hidden" name="managed_file[fid]" value="0" /></div>
+                      <div class="description">Praesent porttitor ante non lacus suscipit porta.</div>
+                    </div>
+                  </div>
+                  <div class="form-item form-type-password form-item-password">
+                    <label for="edit-password">Password</label> <input type="password" id="edit-password" name="password" size="60" maxlength="128" class="form-text" />
+                    <div class="description">Nam tincidunt dictum molestie.</div>
+                  </div>
+                  <div class="form-item form-type-password-confirm form-item-password-confirm">
+                    <div class="form-item form-type-password form-item-password-confirm-pass1 password-parent">
+                      <div class="password-strength">
+                        <div class="password-strength-text" aria-live="assertive"></div>
+                        <div class="password-strength-title">Password strength:</div>
+                        <div class="password-indicator">
+                          <div class="indicator"></div>
+                        </div>
+                      </div>
+                      <label for="edit-password-confirm-pass1">Password</label> <input class="password-field form-text password-processed" type="password" id="edit-password-confirm-pass1" name="password_confirm[pass1]" size="60" maxlength="128" />
+                    </div>
+                    <div class="form-item form-type-password form-item-password-confirm-pass2 confirm-parent">
+                      <div class="password-confirm">Passwords match:</div>
+                      <label for="edit-password-confirm-pass2">Confirm password</label> <input class="password-confirm form-text" type="password" id="edit-password-confirm-pass2" name="password_confirm[pass2]" size="60" maxlength="128" />
+                    </div>
+                    <div class="password-suggestions description" style="display: none;"></div>
+                  </div>
+                  <input type="hidden" name="form_build_id" value="form-8a6A48f_mf0sZLscW9xE5eLl6v5zpjjnafEPtTrTWdw" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                </div>
+              </form>
+            </div>
+            <a name="form-submit"></a>
+            <h2 class="styleguide">Forms, actions</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--2" accept-charset="UTF-8">
+                <div>
+                  <input type="hidden" name="form_build_id" value="form-ZRjlY1e2HAtU71iGxsjV6MBT-vWfn4WrOP-rgZC_qAE" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                  <div class="form-actions form-wrapper" id="edit-actions"><input class="primary form-submit" type="submit" id="edit-submit" name="op" value="Submit" /><input type="submit" id="edit-preview" name="op" value="Preview" class="form-submit" /><a href="/delete" class="danger" id="edit-delete">Delete</a></div>
+                </div>
+              </form>
+            </div>
+            <a name="form-button"></a>
+            <h2 class="styleguide">Forms, button</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--3" accept-charset="UTF-8">
+                <div><input type="submit" id="edit-button" name="op" value="Button" class="form-submit" /><input type="hidden" name="form_build_id" value="form-Mw-WLG85-c7BBuvy-xTDGcfv21GY7_xT7bLrw0XISgc" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" /></div>
+              </form>
+            </div>
+            <a name="form-image-button"></a>
+            <h2 class="styleguide">Forms, image button</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--4" accept-charset="UTF-8">
+                <div><input height="20" type="image" id="edit-image-button" name="Image button" src="core/misc/message-24-ok.png" class="form-submit" /><input type="hidden" name="form_build_id" value="form-1etbZEOR-efbXdMi9IAIQgz1LCNycam-Tt7F1USoSF8" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" /></div>
+              </form>
+            </div>
+            <a name="dropbutton"></a>
+            <h2 class="styleguide">Forms, dropbutton</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--5" accept-charset="UTF-8">
+                <div>
+                  <div class="dropbutton-wrapper dropbutton-processed dropbutton-multiple">
+                    <div class="dropbutton-widget">
+                      <ul class="dropbutton">
+                        <li class="edit odd first dropbutton-action"><a href="/edit">Edit</a></li>
+                        <li class="dropbutton-toggle"><button type="button" role="button"><span class="dropbutton-arrow"><span class="visually-hidden">List additional actions</span></span></button></li>
+                        <li class="clone even dropbutton-action secondary-action"><a href="/clone">Clone</a></li>
+                        <li class="delete odd last dropbutton-action secondary-action"><a href="/delete">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <input type="hidden" name="form_build_id" value="form-RNgexExRwWggEOImZmuKrVQ0gmcjhn7ACv8hn2blxU8" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                </div>
+              </form>
+            </div>
+            <a name="form-markup"></a>
+            <h2 class="styleguide">Forms, markup</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--6" accept-charset="UTF-8">
+                <div>
+                  <p><em>Markup</em>: Note that markup does not allow titles or descriptions. Use "item" for those options.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+                  <div id="edit-item" class="form-item form-type-item">
+                    <label for="edit-item">Item</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+                    <div class="description">Vivamus pretium placerat lorem, in tempor massa convallis sit amet.</div>
+                  </div>
+                  <input type="hidden" name="form_build_id" value="form-aPZTFBNVCNEZ0z-1ZmnhYyKsDHHGxNQZeEAsNZNvWOQ" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                </div>
+              </form>
+            </div>
+            <a name="form-fieldsets"></a>
+            <h2 class="styleguide">Forms, fieldsets</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--7" accept-charset="UTF-8">
+                <div>
+                  <fieldset class="collapsible collapsed form-wrapper collapse-processed" id="edit-fieldset-collapsed">
+                    <legend><span class="fieldset-legend"><a class="fieldset-title" href="#"><span class="fieldset-legend-prefix element-invisible">Show</span> Fieldset collapsed</a></span></legend>
+                    <div class="fieldset-wrapper">
+                      <div class="fieldset-description">Cras pharetra, nisl a sagittis feugiat, turpis magna placerat sem, sed euismod erat elit in magna.</div>
+                      <div class="form-item form-type-select form-item-select-fieldset-collapsed">
+                        <label for="edit-select-fieldset-collapsed">Select</label> 
+                        <select id="edit-select-fieldset-collapsed" name="select-fieldset-collapsed" class="form-select">
+                          <option value="Adipiscing dictum tempor">Adipiscing dictum tempor</option>
+                          <option value="Ipsum fusce vulputate">Ipsum fusce vulputate</option>
+                          <option value="Cras erat lacinia">Cras erat lacinia</option>
+                          <option value="Nisl viverra sit">Nisl viverra sit</option>
+                          <option value="Aliquam mattis convallis">Aliquam mattis convallis</option>
+                        </select>
+                        <div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus nec urna ut lorem tempus aliquet eget nec lectus.</div>
+                      </div>
+                      <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsed">
+                        <label for="edit-checkboxes-fieldset-collapsed">Checkboxes</label>
+                        <div id="edit-checkboxes-fieldset-collapsed" class="form-checkboxes">
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Adipiscing-dictum-tempor"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-adipiscing-dictum-tempor" name="checkboxes-fieldset-collapsed[Adipiscing dictum tempor]" value="Adipiscing dictum tempor" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-adipiscing-dictum-tempor">Adipiscing dictum tempor</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Ipsum-fusce-vulputate"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-ipsum-fusce-vulputate" name="checkboxes-fieldset-collapsed[Ipsum fusce vulputate]" value="Ipsum fusce vulputate" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-ipsum-fusce-vulputate">Ipsum fusce vulputate</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Cras-erat-lacinia"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-cras-erat-lacinia" name="checkboxes-fieldset-collapsed[Cras erat lacinia]" value="Cras erat lacinia" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-cras-erat-lacinia">Cras erat lacinia</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Nisl-viverra-sit"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-nisl-viverra-sit" name="checkboxes-fieldset-collapsed[Nisl viverra sit]" value="Nisl viverra sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-nisl-viverra-sit">Nisl viverra sit</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Aliquam-mattis-convallis"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-aliquam-mattis-convallis" name="checkboxes-fieldset-collapsed[Aliquam mattis convallis]" value="Aliquam mattis convallis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-aliquam-mattis-convallis">Aliquam mattis convallis</label></div>
+                        </div>
+                        <div class="description">Sed vitae velit ut dolor varius semper at id lectus.</div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="collapsible form-wrapper collapse-processed" id="edit-fieldset-collapsible">
+                    <legend><span class="fieldset-legend"><a class="fieldset-title" href="#"><span class="fieldset-legend-prefix element-invisible">Hide</span> Fieldset collapsible</a></span></legend>
+                    <div class="fieldset-wrapper">
+                      <div class="fieldset-description">Morbi vel dolor sit amet metus eleifend fringilla.</div>
+                      <div class="form-item form-type-select form-item-select-fieldset-collapsible">
+                        <label for="edit-select-fieldset-collapsible">Select</label> 
+                        <select id="edit-select-fieldset-collapsible" name="select-fieldset-collapsible" class="form-select">
+                          <option value="Adipiscing dictum tempor">Adipiscing dictum tempor</option>
+                          <option value="Ipsum fusce vulputate">Ipsum fusce vulputate</option>
+                          <option value="Cras erat lacinia">Cras erat lacinia</option>
+                          <option value="Nisl viverra sit">Nisl viverra sit</option>
+                          <option value="Aliquam mattis convallis">Aliquam mattis convallis</option>
+                        </select>
+                        <div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus nec urna ut lorem tempus aliquet eget nec lectus.</div>
+                      </div>
+                      <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsible">
+                        <label for="edit-checkboxes-fieldset-collapsible">Checkboxes</label>
+                        <div id="edit-checkboxes-fieldset-collapsible" class="form-checkboxes">
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Adipiscing-dictum-tempor"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-adipiscing-dictum-tempor" name="checkboxes-fieldset-collapsible[Adipiscing dictum tempor]" value="Adipiscing dictum tempor" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-adipiscing-dictum-tempor">Adipiscing dictum tempor</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Ipsum-fusce-vulputate"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-ipsum-fusce-vulputate" name="checkboxes-fieldset-collapsible[Ipsum fusce vulputate]" value="Ipsum fusce vulputate" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-ipsum-fusce-vulputate">Ipsum fusce vulputate</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Cras-erat-lacinia"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-cras-erat-lacinia" name="checkboxes-fieldset-collapsible[Cras erat lacinia]" value="Cras erat lacinia" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-cras-erat-lacinia">Cras erat lacinia</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Nisl-viverra-sit"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-nisl-viverra-sit" name="checkboxes-fieldset-collapsible[Nisl viverra sit]" value="Nisl viverra sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-nisl-viverra-sit">Nisl viverra sit</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Aliquam-mattis-convallis"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-aliquam-mattis-convallis" name="checkboxes-fieldset-collapsible[Aliquam mattis convallis]" value="Aliquam mattis convallis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-aliquam-mattis-convallis">Aliquam mattis convallis</label></div>
+                        </div>
+                        <div class="description">Sed vitae velit ut dolor varius semper at id lectus.</div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form-wrapper" id="edit-fieldset">
+                    <legend><span class="fieldset-legend">Fieldset</span></legend>
+                    <div class="fieldset-wrapper">
+                      <div class="fieldset-description">Donec magna est, sollicitudin vel ultrices vel, mattis ut odio.</div>
+                      <div class="form-item form-type-select form-item-select-fieldset">
+                        <label for="edit-select-fieldset">Select</label> 
+                        <select id="edit-select-fieldset" name="select-fieldset" class="form-select">
+                          <option value="Adipiscing dictum tempor">Adipiscing dictum tempor</option>
+                          <option value="Ipsum fusce vulputate">Ipsum fusce vulputate</option>
+                          <option value="Cras erat lacinia">Cras erat lacinia</option>
+                          <option value="Nisl viverra sit">Nisl viverra sit</option>
+                          <option value="Aliquam mattis convallis">Aliquam mattis convallis</option>
+                        </select>
+                        <div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus nec urna ut lorem tempus aliquet eget nec lectus.</div>
+                      </div>
+                      <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset">
+                        <label for="edit-checkboxes-fieldset">Checkboxes</label>
+                        <div id="edit-checkboxes-fieldset" class="form-checkboxes">
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Adipiscing-dictum-tempor"><input type="checkbox" id="edit-checkboxes-fieldset-adipiscing-dictum-tempor" name="checkboxes-fieldset[Adipiscing dictum tempor]" value="Adipiscing dictum tempor" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-adipiscing-dictum-tempor">Adipiscing dictum tempor</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Ipsum-fusce-vulputate"><input type="checkbox" id="edit-checkboxes-fieldset-ipsum-fusce-vulputate" name="checkboxes-fieldset[Ipsum fusce vulputate]" value="Ipsum fusce vulputate" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-ipsum-fusce-vulputate">Ipsum fusce vulputate</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Cras-erat-lacinia"><input type="checkbox" id="edit-checkboxes-fieldset-cras-erat-lacinia" name="checkboxes-fieldset[Cras erat lacinia]" value="Cras erat lacinia" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-cras-erat-lacinia">Cras erat lacinia</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Nisl-viverra-sit"><input type="checkbox" id="edit-checkboxes-fieldset-nisl-viverra-sit" name="checkboxes-fieldset[Nisl viverra sit]" value="Nisl viverra sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-nisl-viverra-sit">Nisl viverra sit</label></div>
+                          <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Aliquam-mattis-convallis"><input type="checkbox" id="edit-checkboxes-fieldset-aliquam-mattis-convallis" name="checkboxes-fieldset[Aliquam mattis convallis]" value="Aliquam mattis convallis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-aliquam-mattis-convallis">Aliquam mattis convallis</label></div>
+                        </div>
+                        <div class="description">Sed vitae velit ut dolor varius semper at id lectus.</div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <input type="hidden" name="form_build_id" value="form-XPXUQ-EldJm32RqenZZ8t0TuWNsENSQx10zSPMKwpiY" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                </div>
+              </form>
+            </div>
+            <a name="form-vertical-tabs"></a>
+            <h2 class="styleguide">Forms, vertical tabs</h2>
+            <div class="styleguide">
+              <form action="/admin/appearance/styleguide/seven" method="post" id="styleguide-form--8" accept-charset="UTF-8">
+                <div>
+                  <h2 class="element-invisible">Vertical Tabs</h2>
+                  <div class="vertical-tabs clearfix">
+                    <ul class="vertical-tabs-list">
+                      <li class="vertical-tab-button first selected" tabindex="-1"><a href="#"><strong>Fieldset</strong><span id="active-vertical-tab" class="element-invisible">(active tab)</span></a></li>
+                      <li class="vertical-tab-button" tabindex="-1"><a href="#"><strong>Fieldset collapsed</strong></a></li>
+                      <li class="vertical-tab-button last" tabindex="-1"><a href="#"><strong>Fieldset collapsible</strong></a></li>
+                    </ul>
+                    <div class="vertical-tabs-panes vertical-tabs-processed">
+                      <fieldset class="form-wrapper vertical-tabs-pane" id="edit-fieldset--2">
+                        <legend><span class="fieldset-legend">Fieldset</span></legend>
+                        <div class="fieldset-wrapper">
+                          <div class="fieldset-description">Curabitur quis nunc nibh.</div>
+                          <div class="form-item form-type-select form-item-select-fieldset">
+                            <label for="edit-select-fieldset--2">Select</label> 
+                            <select id="edit-select-fieldset--2" name="select-fieldset" class="form-select">
+                              <option value="Sit consectetur felis">Sit consectetur felis</option>
+                              <option value="Viverra velit euismod">Viverra velit euismod</option>
+                              <option value="Aliquam viverra egestas">Aliquam viverra egestas</option>
+                              <option value="Consectetur iaculis amet">Consectetur iaculis amet</option>
+                              <option value="Sed enim sit">Sed enim sit</option>
+                            </select>
+                            <div class="description">Curabitur sed ante non quam fermentum vehicula.</div>
+                          </div>
+                          <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset">
+                            <label for="edit-checkboxes-fieldset--2">Checkboxes</label>
+                            <div id="edit-checkboxes-fieldset--2" class="form-checkboxes">
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Sit-consectetur-felis"><input type="checkbox" id="edit-checkboxes-fieldset-sit-consectetur-felis" name="checkboxes-fieldset[Sit consectetur felis]" value="Sit consectetur felis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-sit-consectetur-felis">Sit consectetur felis</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Viverra-velit-euismod"><input type="checkbox" id="edit-checkboxes-fieldset-viverra-velit-euismod" name="checkboxes-fieldset[Viverra velit euismod]" value="Viverra velit euismod" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-viverra-velit-euismod">Viverra velit euismod</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Aliquam-viverra-egestas"><input type="checkbox" id="edit-checkboxes-fieldset-aliquam-viverra-egestas" name="checkboxes-fieldset[Aliquam viverra egestas]" value="Aliquam viverra egestas" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-aliquam-viverra-egestas">Aliquam viverra egestas</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Consectetur-iaculis-amet"><input type="checkbox" id="edit-checkboxes-fieldset-consectetur-iaculis-amet" name="checkboxes-fieldset[Consectetur iaculis amet]" value="Consectetur iaculis amet" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-consectetur-iaculis-amet">Consectetur iaculis amet</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Sed-enim-sit"><input type="checkbox" id="edit-checkboxes-fieldset-sed-enim-sit" name="checkboxes-fieldset[Sed enim sit]" value="Sed enim sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-sed-enim-sit">Sed enim sit</label></div>
+                            </div>
+                            <div class="description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form-wrapper vertical-tabs-pane" id="edit-fieldset-collapsed--2" style="display: none;">
+                        <legend><span class="fieldset-legend">Fieldset collapsed</span></legend>
+                        <div class="fieldset-wrapper">
+                          <div class="fieldset-description">Sed et enim nunc, nec vehicula sem.</div>
+                          <div class="form-item form-type-select form-item-select-fieldset-collapsed">
+                            <label for="edit-select-fieldset-collapsed--2">Select</label> 
+                            <select id="edit-select-fieldset-collapsed--2" name="select-fieldset-collapsed" class="form-select">
+                              <option value="Sit consectetur felis">Sit consectetur felis</option>
+                              <option value="Viverra velit euismod">Viverra velit euismod</option>
+                              <option value="Aliquam viverra egestas">Aliquam viverra egestas</option>
+                              <option value="Consectetur iaculis amet">Consectetur iaculis amet</option>
+                              <option value="Sed enim sit">Sed enim sit</option>
+                            </select>
+                            <div class="description">Curabitur sed ante non quam fermentum vehicula.</div>
+                          </div>
+                          <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsed">
+                            <label for="edit-checkboxes-fieldset-collapsed--2">Checkboxes</label>
+                            <div id="edit-checkboxes-fieldset-collapsed--2" class="form-checkboxes">
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Sit-consectetur-felis"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-sit-consectetur-felis" name="checkboxes-fieldset-collapsed[Sit consectetur felis]" value="Sit consectetur felis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-sit-consectetur-felis">Sit consectetur felis</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Viverra-velit-euismod"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-viverra-velit-euismod" name="checkboxes-fieldset-collapsed[Viverra velit euismod]" value="Viverra velit euismod" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-viverra-velit-euismod">Viverra velit euismod</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Aliquam-viverra-egestas"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-aliquam-viverra-egestas" name="checkboxes-fieldset-collapsed[Aliquam viverra egestas]" value="Aliquam viverra egestas" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-aliquam-viverra-egestas">Aliquam viverra egestas</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Consectetur-iaculis-amet"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-consectetur-iaculis-amet" name="checkboxes-fieldset-collapsed[Consectetur iaculis amet]" value="Consectetur iaculis amet" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-consectetur-iaculis-amet">Consectetur iaculis amet</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Sed-enim-sit"><input type="checkbox" id="edit-checkboxes-fieldset-collapsed-sed-enim-sit" name="checkboxes-fieldset-collapsed[Sed enim sit]" value="Sed enim sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsed-sed-enim-sit">Sed enim sit</label></div>
+                            </div>
+                            <div class="description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form-wrapper vertical-tabs-pane" id="edit-fieldset-collapsible--2" style="display: none;">
+                        <legend><span class="fieldset-legend">Fieldset collapsible</span></legend>
+                        <div class="fieldset-wrapper">
+                          <div class="fieldset-description">Morbi congue nulla vel tortor aliquet imperdiet.</div>
+                          <div class="form-item form-type-select form-item-select-fieldset-collapsible">
+                            <label for="edit-select-fieldset-collapsible--2">Select</label> 
+                            <select id="edit-select-fieldset-collapsible--2" name="select-fieldset-collapsible" class="form-select">
+                              <option value="Sit consectetur felis">Sit consectetur felis</option>
+                              <option value="Viverra velit euismod">Viverra velit euismod</option>
+                              <option value="Aliquam viverra egestas">Aliquam viverra egestas</option>
+                              <option value="Consectetur iaculis amet">Consectetur iaculis amet</option>
+                              <option value="Sed enim sit">Sed enim sit</option>
+                            </select>
+                            <div class="description">Curabitur sed ante non quam fermentum vehicula.</div>
+                          </div>
+                          <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsible">
+                            <label for="edit-checkboxes-fieldset-collapsible--2">Checkboxes</label>
+                            <div id="edit-checkboxes-fieldset-collapsible--2" class="form-checkboxes">
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Sit-consectetur-felis"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-sit-consectetur-felis" name="checkboxes-fieldset-collapsible[Sit consectetur felis]" value="Sit consectetur felis" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-sit-consectetur-felis">Sit consectetur felis</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Viverra-velit-euismod"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-viverra-velit-euismod" name="checkboxes-fieldset-collapsible[Viverra velit euismod]" value="Viverra velit euismod" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-viverra-velit-euismod">Viverra velit euismod</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Aliquam-viverra-egestas"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-aliquam-viverra-egestas" name="checkboxes-fieldset-collapsible[Aliquam viverra egestas]" value="Aliquam viverra egestas" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-aliquam-viverra-egestas">Aliquam viverra egestas</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Consectetur-iaculis-amet"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-consectetur-iaculis-amet" name="checkboxes-fieldset-collapsible[Consectetur iaculis amet]" value="Consectetur iaculis amet" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-consectetur-iaculis-amet">Consectetur iaculis amet</label></div>
+                              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Sed-enim-sit"><input type="checkbox" id="edit-checkboxes-fieldset-collapsible-sed-enim-sit" name="checkboxes-fieldset-collapsible[Sed enim sit]" value="Sed enim sit" class="form-checkbox" /> <label class="option" for="edit-checkboxes-fieldset-collapsible-sed-enim-sit">Sed enim sit</label></div>
+                            </div>
+                            <div class="description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <input class="vertical-tabs-active-tab" type="hidden" name="vertical_tabs__active_tab" value="edit-fieldset--2" />
+                    </div>
+                  </div>
+                  <input type="hidden" name="form_build_id" value="form-zM5KvRVz38pt_EVGXMnGTmeqsMwQo8nFFQGRtCwqHec" /> <input type="hidden" name="form_token" value="S_Wdr-MtAsq_Di3bjruVi58tQBsZ1LCq3-wnzZopFGg" /> <input type="hidden" name="form_id" value="styleguide_form" />
+                </div>
+              </form>
+            </div>
+            <a name="confirm_form"></a>
+            <h2 class="styleguide">Confirm form</h2>
+            <div class="styleguide">
+              <form class="confirm-form confirmation" action="/admin/appearance/styleguide/seven" method="post" id="confirm-form" accept-charset="UTF-8">
+                <div>
+                  This action cannot be undone.<input type="hidden" name="confirm" value="1" /> <input type="hidden" name="form_build_id" value="form-Hu3rg7G4SjOV0dKcKgu46bBEBeNJU9GzehjWed32Jwc" /> <input type="hidden" name="form_token" value="d9sNo7sW2B9vwIwOAJHCSfiNJM5Vl1NqtX0wq-tM9SI" /> <input type="hidden" name="form_id" value="confirm_form" />
+                  <div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Confirm" class="form-submit" /><a href="/" id="edit-cancel">Cancel</a></div>
+                </div>
+              </form>
+            </div>
+            <a name="filter_tips"></a>
+            <h2 class="styleguide">Filter tips, short</h2>
+            <div class="styleguide">
+              <div class="form-item form-type-textarea">
+                <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                  <textarea rows="5" cols="60" class="form-textarea"></textarea>
+                  <div class="grippie"></div>
+                </div>
+              </div>
+              <fieldset class="filter-wrapper form-wrapper">
+                <div class="fieldset-wrapper">
+                  <div class="filter-help">
+                    <p><a href="/filter/tips" target="_blank">More information about text formats</a></p>
+                  </div>
+                  <div class="form-item form-type-select">
+                    <label>Text format</label> 
+                    <select class="filter-list form-select">
+                      <option value="filtered_html">Filtered HTML</option>
+                      <option value="full_html">Full HTML</option>
+                      <option value="plain_text">Plain text</option>
+                    </select>
+                  </div>
+                  <div class="filter-guidelines filter-guidelines-processed">
+                    <div class="filter-guidelines-item filter-guidelines-filtered_html" style="display: block;">
+                      <h3 style="display: none;">Filtered HTML</h3>
+                      <ul class="tips">
+                        <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                        <li>Allowed HTML tags: &lt;a&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; &lt;blockquote&gt; &lt;code&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</li>
+                        <li>Lines and paragraphs break automatically.</li>
+                      </ul>
+                    </div>
+                    <div class="filter-guidelines-item filter-guidelines-full_html" style="display: none;">
+                      <h3 style="display: none;">Full HTML</h3>
+                      <ul class="tips">
+                        <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                        <li>Lines and paragraphs break automatically.</li>
+                      </ul>
+                    </div>
+                    <div class="filter-guidelines-item filter-guidelines-plain_text" style="display: none;">
+                      <h3 style="display: none;">Plain text</h3>
+                      <ul class="tips">
+                        <li>No HTML tags allowed.</li>
+                        <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                        <li>Lines and paragraphs break automatically.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <a name="pager"></a>
+            <h2 class="styleguide">Pager</h2>
+            <div class="styleguide">
+              <h2 class="element-invisible">Pages</h2>
+              <div class="item-list">
+                <ul class="pager">
+                  <li class="pager-first odd first"><a title="Go to first page" href="/admin/appearance/styleguide/seven?page=0%2C0">« first</a></li>
+                  <li class="pager-previous even"><a title="Go to previous page" href="/admin/appearance/styleguide/seven?page=0%2C7">‹ previous</a></li>
+                  <li class="pager-ellipsis odd">…</li>
+                  <li class="pager-item even"><a title="Go to page 5" href="/admin/appearance/styleguide/seven?page=0%2C4">5</a></li>
+                  <li class="pager-item odd"><a title="Go to page 6" href="/admin/appearance/styleguide/seven?page=0%2C5">6</a></li>
+                  <li class="pager-item even"><a title="Go to page 7" href="/admin/appearance/styleguide/seven?page=0%2C6">7</a></li>
+                  <li class="pager-item odd"><a title="Go to page 8" href="/admin/appearance/styleguide/seven?page=0%2C7">8</a></li>
+                  <li class="pager-current even">9</li>
+                  <li class="pager-item odd"><a title="Go to page 10" href="/admin/appearance/styleguide/seven?page=0%2C9">10</a></li>
+                  <li class="pager-item even"><a title="Go to page 11" href="/admin/appearance/styleguide/seven?page=0%2C10">11</a></li>
+                  <li class="pager-item odd"><a title="Go to page 12" href="/admin/appearance/styleguide/seven?page=0%2C11">12</a></li>
+                  <li class="pager-item even"><a title="Go to page 13" href="/admin/appearance/styleguide/seven?page=0%2C12">13</a></li>
+                  <li class="pager-ellipsis odd">…</li>
+                  <li class="pager-next even"><a title="Go to next page" href="/admin/appearance/styleguide/seven?page=0%2C9">next ›</a></li>
+                  <li class="pager-last odd last"><a title="Go to last page" href="/admin/appearance/styleguide/seven?page=0%2C19">last »</a></li>
+                </ul>
+              </div>
+            </div>
+            <a name="progress_bar"></a>
+            <h2 class="styleguide">Progress bar</h2>
+            <div class="styleguide">
+              <div id="progress" class="progress">
+                <div class="bar">
+                  <div class="filled" style="width: 57%"></div>
+                </div>
+                <div class="percentage">57%</div>
+                <div class="message">Aenean quis leo sit amet tellus tempus cursus.</div>
+              </div>
+            </div>
+            <a name="dialog"></a>
+            <h2 class="styleguide">Dialog</h2>
+            <div class="styleguide">
+              <div id="styleguide-dialog-wrapper" style="height: 200px;"></div>
+            </div>
+            <a name="styleguide_breadcrumb"></a>
+            <h2 class="styleguide">Breadcrumb</h2>
+            <div class="styleguide">
+              <h2 class="element-invisible">You are here</h2>
+              <ol>
+                <li><a href="/">Home</a> »</li>
+                <li><a href="/admin">Administration</a> »</li>
+                <li><a href="/admin/appearance" title="Select and configure your themes.">Appearance</a> »</li>
+                <li><a href="/admin/appearance/styleguide">Style guide</a></li>
+              </ol>
+            </div>
+            <a name="link"></a>
+            <h2 class="styleguide">Link</h2>
+            <div class="styleguide"><a href="admin/appearance/styleguide/seven" class="active">a dignissim</a></div>
+            <a name="links"></a>
+            <h2 class="styleguide">Links</h2>
+            <div class="styleguide">
+              <ul class="links">
+                <li class="0 odd first active"><a href="admin/appearance/styleguide/seven" class="active">aliquam turpis ante</a></li>
+                <li class="1 even active"><a href="admin/appearance/styleguide/seven" class="active">dolor et tempor</a></li>
+                <li class="2 odd active"><a href="admin/appearance/styleguide/seven" class="active">convallis urna nec</a></li>
+                <li class="3 even active"><a href="admin/appearance/styleguide/seven" class="active">sit et erat</a></li>
+                <li class="4 odd last active"><a href="admin/appearance/styleguide/seven" class="active">a nam consequat</a></li>
+              </ul>
+            </div>
+            <a name="mark_new"></a>
+            <h2 class="styleguide">Mark, new</h2>
+            <div class="styleguide"><a href="admin/appearance/styleguide/seven" class="active">Curabitur dapibus odio quis enim hendrerit eu placerat lorem accumsan.</a> <span class="marker">new</span></div>
+            <a name="mark_updated"></a>
+            <h2 class="styleguide">Mark, updated</h2>
+            <div class="styleguide"><a href="admin/appearance/styleguide/seven" class="active">Vestibulum sit amet massa est.</a> <span class="marker">updated</span></div>
+            <a name="more_help_link"></a>
+            <h2 class="styleguide">More help link</h2>
+            <div class="styleguide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+              <div class="more-help-link"><a href="admin/appearance/styleguide/seven" class="active">More help</a></div>
+            </div>
+            <a name="more_link"></a>
+            <h2 class="styleguide">More link</h2>
+            <div class="styleguide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</p>
+              <div class="more-link"><a href="admin/appearance/styleguide/seven" title="Vivamus semper vehicula ante eget semper." class="active">More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+  <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-resizable" tabindex="-1" role="dialog" aria-describedby="styleguide-dialog" aria-labelledby="ui-id-1" style="position: absolute; height: auto; width: 300px; top: 9221px; left: 487px; display: block;">
+    <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">Dialog title</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close ui-state-focus" role="button" aria-disabled="false" title="close"><span class="ui-button-text">close</span></button></div>
+    <div id="styleguide-dialog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 103px; max-height: none; height: auto;">Morbi congue nulla vel tortor aliquet imperdiet.</div>
+    <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+  </div>
+</body>
+</html>
