@@ -3,9 +3,10 @@
  * Generic elements.
  */
 body {
-  color: #000;
+  color: #666;
   background: #fff;
-  font: normal 81.3%/1.538em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 85%/1.538em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.7em;
 }
 a {
   color: #0074bd;
@@ -31,7 +32,9 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  margin: 10px 0;
+  margin: 18px 0;
+  color:#333;
+  
 }
 h1 {
   font-size: 1.538em;
@@ -51,6 +54,7 @@ h6 {
 }
 p {
   margin: 1em 0;
+  
 }
 dl {
   margin: 0 0 20px;
@@ -134,6 +138,7 @@ ul.menu li.expanded {
 quote,
 code {
   margin: .5em 0;
+  
 }
 code,
 pre,
@@ -143,6 +148,23 @@ kbd {
 pre {
   margin: 0.5em 0;
   white-space: pre-wrap;
+}
+
+div.error, div.warning, div.status {
+	border:none;
+	color: #333;
+}
+
+div.error {
+	background-color: #f8c3c3;
+}
+
+div.warning {
+	background-color: #ffeec1;
+}
+
+div.status {
+	background-color: #d0f3d6;
 }
 
 /**
@@ -165,8 +187,8 @@ pre {
   font-size: 0.94em;
   padding: 1px 10px 2px 10px; /* LTR */
   text-decoration: none;
-  -moz-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
 }
 #skip-link a:hover,
 #skip-link a:focus,
@@ -181,12 +203,20 @@ pre {
   overflow: hidden;
   padding: 20px 20px 0 20px; /* LTR */
   position: relative;
-  background-color: #eee;
+  background-color: #333;
+  color: #ddd;
 }
-#branding div.breadcrumb {
-  font-size: 0.846em;
-  padding-bottom: 5px;
+#branding .breadcrumb {
+  font-size: 1em;
+  padding-bottom: 10px;
+  
 }
+
+#branding .breadcrumb li a {
+	letter-spacing: 1px;
+	
+}
+
 #branding div.block {
   position: relative;
   float: right; /* LTR */
@@ -234,10 +264,11 @@ pre {
   padding-top: 20px;
 }
 #branding h1.page-title {
-  color: #000;
+  color: #ddd;
   margin: 0;
-  padding-bottom: 10px;
-  font-size: 1.385em;
+  padding-top: 8px;
+  padding-bottom: 18px;
+  font-size: 1.685em;
   font-weight: normal;
   float: left; /* LTR */
 }
@@ -278,13 +309,13 @@ ul.primary li.active a {
   line-height: 2.60em;
   padding: 0 18px 8px;
   background-color: #aaa;
-  color: #000;
+  color: #333;
   font-weight: bold;
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: #aaa;
-  -moz-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
 }
 ul.primary li.active a,
 ul.primary li.active a.active,
@@ -297,7 +328,7 @@ ul.primary li a:hover {
   color: #fff;
 }
 ul.primary li.active a:hover {
-  color: #000;
+  color: #333;
 }
 .tabs-secondary {
   clear: both;
@@ -316,7 +347,7 @@ ul.secondary li {
 }
 ul.secondary li a {
   background-color: #ddd;
-  color: #000;
+  color: #333;
   display: inline-block;
 }
 ul.secondary li a,
@@ -324,8 +355,8 @@ ul.secondary li a:hover,
 ul.secondary li.active a,
 ul.secondary li.active a.active {
   padding: 2px 10px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 ul.secondary li a:hover,
 ul.secondary li.active a,
@@ -346,7 +377,7 @@ ul.secondary li.active a.active {
   margin-left: 40px; /* LTR */
   background: #fff;
   position: relative;
-  color: #333;
+  color: inherit;
 }
 #secondary-links ul.links li {
   padding: 0 10px 10px 0; /* LTR */
@@ -360,8 +391,8 @@ ul.secondary li.active a.active {
   height: 55px;
   width: 80px;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 #secondary-links ul.links li a:hover {
   background: #999;
@@ -440,7 +471,7 @@ table th {
   vertical-align: middle;
   padding: 8px 10px;
   border: 0;
-  color: #000;
+  color: #333;
 }
 tr.even,
 tr.odd {
@@ -655,8 +686,8 @@ a.button {
   border-left-color: #d2d2d2;
   border-right-color: #d2d2d2;
   background: url(images/buttons.png) 0 0 repeat-x;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 a.button:link,
 a.button:visited,
@@ -709,7 +740,7 @@ input.form-email:focus,
 input.form-file:focus,
 textarea.form-textarea:focus,
 select.form-select:focus {
-  color: #000;
+  color: #333;
   border-color: rgba(0, 116, 189, 0.8);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(220, 220, 220, 0.4);
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(220, 220, 220, 0.4);
@@ -862,7 +893,7 @@ ol.task-list li {
 ol.task-list li.active {
   background: transparent url(images/task-item.png) no-repeat 3px 50%; /* LTR */
   padding: 0.5em 1em 0.5em 20px; /* LTR */
-  color: #000;
+  color: #333;
 }
 ol.task-list li.done {
   background: transparent url(images/task-check.png) no-repeat 0 50%;
@@ -917,7 +948,7 @@ div.add-or-remove-shortcuts {
   background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0), #e7e7e7);
   background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), #e7e7e7);
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e7e7e7);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .js .dropbutton-widget:hover {
   background-color: #f0f0f0;
