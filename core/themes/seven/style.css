@@ -426,12 +426,16 @@ table {
   width: 100%;
   font-size: 0.923em;
   margin: 0 0 10px;
-  border: 1px solid #bebfb9;
+  border: 1px solid #e3e2e2;
+}
+table caption {
+  text-align: left;
+  padding: 5px 0;
 }
 table td,
 table th {
   vertical-align: middle;
-  padding: 8px 10px;
+  padding: 10px 10px;
   border: 0;
   color: #000;
 }
@@ -439,8 +443,8 @@ tr.even,
 tr.odd {
   border-width: 0 1px 0 1px;
   border-style: solid;
-  border-color: #bebfb9;
-  background: #f3f4ee;
+  border: 0;
+  background: #F4F4F4;
 }
 tr.odd {
   background: #fff;
@@ -453,12 +457,12 @@ tr.drag-previous {
 }
 table th {
   text-transform: uppercase;
-  background: #e1e2dc;
-  font-weight: normal;
+  background: #e3e2e2;
   border-width: 1px;
   border-style: solid;
   border-color: #bebfb9;
   padding: 3px 10px;
+  border: 1px solid #e3e2e2;
 }
 table th.active {
   background: #bdbeb9;
@@ -510,7 +514,7 @@ table.system-status-report tr.error {
  * in some tables, since it's webkit only, we can use :last-child
  */
 tr td:last-child {
-  border-right: 1px solid #bebfb9; /* LTR */
+  border-right: 1px solid #F4F4F4; /* LTR */
 }
 
 
