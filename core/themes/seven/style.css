@@ -1,4 +1,3 @@
-
 /**
  * Generic elements.
  */
@@ -8,7 +7,7 @@ body {
   font: normal 81.3%/1.538em "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 a {
-  color: #0074bd;
+  color: #0D68A6;
   text-decoration: none;
 }
 a:hover {
@@ -181,7 +180,7 @@ pre {
   overflow: hidden;
   padding: 20px 20px 0 20px; /* LTR */
   position: relative;
-  background-color: #e0e0d8;
+  background-color: #e3e2e2;
 }
 #branding div.breadcrumb {
   font-size: 0.846em;
@@ -235,10 +234,8 @@ pre {
 }
 #branding h1.page-title {
   color: #000;
-  margin: 0;
+  margin-top: 10px;
   padding-bottom: 10px;
-  font-size: 1.385em;
-  font-weight: normal;
   float: left; /* LTR */
 }
 
@@ -258,13 +255,13 @@ ul.primary {
   text-transform: uppercase;
   font-size: 0.923em;
   height: 2.60em;
-  margin: 0;
+  margin: 17px 0 0 0;
   padding-top: 0;
 }
 ul.primary li {
   float: left; /* LTR */
   list-style: none;
-  margin: 0 2px;
+  margin: 0 1px;
 }
 ul.primary li a:link,
 ul.primary li a.active,
@@ -276,25 +273,21 @@ ul.primary li.active a {
   float: left; /* LTR */
   height: 2.60em;
   line-height: 2.60em;
-  padding: 0 18px 8px;
-  background-color: #a6a7a2;
+  padding: 0 18px 2px;
+  background-color: #f4f4f4;
   color: #000;
   font-weight: bold;
-  border-width: 1px 1px 0 1px;
-  border-style: solid;
-  border-color: #a6a7a2;
-  -moz-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 ul.primary li.active a,
 ul.primary li.active a.active,
 ul.primary li.active a:active,
 ul.primary li.active a:visited {
   background-color: #fff;
-  border-color: #c9cac4;
 }
 ul.primary li a:hover {
-  color: #fff;
+  color: #0D68A6;
 }
 ul.primary li.active a:hover {
   color: #000;
@@ -642,21 +635,21 @@ body div.form-type-checkbox div.description {
 input.form-submit,
 a.button {
   cursor: pointer;
-  padding: 4px 17px;
+  padding: 5px 17px;
   margin-bottom: 1em;
   margin-right: 1em; /* LTR */
   color: #5a5a5a;
   text-align: center;
+  text-transform: uppercase;
   font-weight: normal;
   font-size: 1.077em;
-  font-family: "Lucida Grande", Verdana, sans-serif;
   border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
   border-left-color: #d2d2d2;
   border-right-color: #d2d2d2;
   background: url(images/buttons.png) 0 0 repeat-x;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 a.button:link,
 a.button:visited,
@@ -665,14 +658,12 @@ a.button:active {
   text-decoration: none;
   color: #5a5a5a;
 }
-.node-form input#edit-submit,
-.node-form input#edit-submit-1 {
-  border: 1px solid #8eB7cd;
-  border-left-color: #8eB7cd;
-  border-right-color: #8eB7cd;
-  border-bottom-color: #7691a2;
-  background: url(images/buttons.png) 0 -40px repeat-x;
-  color: #133B54;
+input#edit-submit,
+input#edit-submit-1 {
+  background-image: none;
+  background-color: #0D68A6;
+  border-color: #0D68A6;
+  color: #fff;
 }
 input.form-submit:active {
   background: #666;
@@ -955,16 +946,8 @@ div.add-or-remove-shortcuts {
 }  */
 /* Dropbutton */
 .js .dropbutton-widget {
-  background-color: #fff;
-  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0), #e7e7e7);
-  background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0), #e7e7e7);
-  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), #e7e7e7);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e7e7e7);
-  border-radius: 5px;
 }
 .js .dropbutton-widget:hover {
-  background-color: #f0f0f0;
-  border-color: #b8b8b8;
 }
 .js .dropbutton-multiple.open .dropbutton-widget:hover {
   background-color: #fff;

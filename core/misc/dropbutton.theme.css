@@ -6,23 +6,25 @@
 
 .js .dropbutton-widget {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 2px solid #e9e9e9;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 .js .dropbutton-widget:hover {
-  border-color: #b8b8b8;
+  border-color: #e3e2e2;
 }
 .dropbutton .dropbutton-action > * {
-  padding: 0.1em 0.5em;
+  padding: 0.25em 1em;
   white-space: nowrap;
 }
 .dropbutton .secondary-action {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #e9e9e9;
 }
 .dropbutton-multiple .dropbutton {
-  border-right: 1px solid #e8e8e8; /* LTR */
+  border-right: 1px solid #e9e9e9; /* LTR */
 }
 [dir="rtl"] .dropbutton-multiple .dropbutton {
-  border-left: 1px solid #e8e8e8;
+  border-left: 1px solid #e9e9e9;
   border-right: 0 none;
 }
 .dropbutton-multiple .dropbutton .dropbutton-action > * {
