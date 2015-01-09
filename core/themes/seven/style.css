@@ -5,7 +5,7 @@
 body {
   color: #000;
   background: #fff;
-  font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font: normal 81.3%/1.538em "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 a {
   color: #0074bd;
@@ -31,7 +31,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  margin: 10px 0;
+  margin: 20px 0 10px 0;
 }
 h1 {
   font-size: 1.538em;
@@ -910,6 +910,49 @@ div.add-or-remove-shortcuts {
   padding: 0 5px 5px 0; /* LTR */
 }
 
+/**
+ * Style guide.
+ */
+.styleguide-column1of1-block {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.styleguide-column1of2-block,
+.styleguide-column2of2-block {
+  display: inline-block;
+  float: left;
+  width: 600px;
+  height: 570px;
+}
+/*  .styleguide-column1of2-block {
+  left: 0;
+}
+.styleguide-column2of2-block {
+  left: 750px;
+}  */
+.styleguide-column1of4-block,
+.styleguide-column2of4-block,
+.styleguide-column3of4-block,
+.styleguide-column4of4-block {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+}
+/*  .styleguide-column1of4-block {
+  left: 0;
+}
+.styleguide-column2of4-block {
+  left: 375px;
+}
+.styleguide-column3of4-block {
+  left: 750px;
+}
+.styleguide-column4of4-block {
+  left: 1025px;
+}  */
 /* Dropbutton */
 .js .dropbutton-widget {
   background-color: #fff;
