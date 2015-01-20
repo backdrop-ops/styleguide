@@ -361,33 +361,62 @@ ul.secondary li.active a.active {
 }
 div.messages {
   border: none;
+  background-image: none;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  padding: 5px 5px 5px 50px; /* LTR */
+  position: relative;
+  line-height: 2em;
+}
+div.messages span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 7px;
+  margin-right: 10px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+div.messages i.fa {
+  color: #fff;
 }
 div.status,
 table tr.ok {
   background-color: #e6f2ba;
+  background: rgba(207, 222, 86, 0.4);
 }
 div.status,
 .ok {
   color: #234600;
 }
+div.status span {
+  background-color: #CFDE56;
+}
 div.warning,
 table tr.warning {
   background-color: #fcf1a6;
+  background: rgba(251, 239, 119, 0.4);
 }
 div.warning,
 .warning {
   color: #555;
 }
+div.warning span {
+  background-color: #FCE400;
+}
 div.error,
 table tr.error {
   background-color: #fbf1ef;
+  background: rgba(238, 61, 35, 0.07);
 }
 div.error,
 .error {
   color: #ec351c;
 }
+div.error span {
+  background-color: #EE3D23;
+}
+
 #secondary-links ul.links li {
   padding: 0 10px 10px 0; /* LTR */
 }
