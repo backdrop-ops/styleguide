@@ -265,7 +265,7 @@ ul.primary {
 ul.primary li {
   float: left; /* LTR */
   list-style: none;
-  margin: 0;
+  margin: 0 1px 0 0;
 }
 ul.primary li a:link,
 ul.primary li a.active,
@@ -284,8 +284,6 @@ ul.primary li.active a {
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: #f7f7f7;
-  -moz-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
 }
 ul.primary li.active a,
 ul.primary li.active a.active,
@@ -302,6 +300,16 @@ ul.primary li a:hover {
 ul.primary li.active a:hover {
   color: #000;
 }
+
+ul.primary li:first-child a {
+  -moz-border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
+}
+ul.primary li:last-child a {
+  -moz-border-radius: 0 8px 0 0;
+  border-radius: 0 8px 0 0;
+}
+
 .tabs-secondary {
   clear: both;
 }
@@ -318,7 +326,7 @@ ul.secondary li {
   float: none; /* LTR */
 }
 ul.secondary li a {
-  background-color: #ddd;
+  background-color: #e3e2e2;
   color: #000;
   display: inline-block;
 }
@@ -326,7 +334,7 @@ ul.secondary li a,
 ul.secondary li a:hover,
 ul.secondary li.active a,
 ul.secondary li.active a.active {
-  padding: 2px 10px;
+  padding: 2px 12px;
   -moz-border-radius: 7px;
   border-radius: 7px;
 }
@@ -732,9 +740,13 @@ a.button:active {
 input#edit-submit,
 input#edit-submit-1 {
   background-image: none;
-  background-color: #0D68A6;
-  border-color: #0D68A6;
+  background-color: #007BBC;
+  border-color: #007BBC;
   color: #fff;
+}
+input#edit-submit:hover,
+input#edit-submit-1:hover {
+  background-color: #0C5E89;
 }
 input.form-submit:active {
   background: #666;
@@ -1016,13 +1028,6 @@ div.add-or-remove-shortcuts {
   left: 1025px;
 }  */
 /* Dropbutton */
-.js .dropbutton-widget {
-}
-.js .dropbutton-widget:hover {
-}
-.js .dropbutton-multiple.open .dropbutton-widget:hover {
-  background-color: #fff;
-}
 .dropbutton-content li:first-child > * {
   text-overflow: ellipsis;
 }
