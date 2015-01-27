@@ -259,7 +259,16 @@ pre {
   overflow: hidden;
   padding: 33px 40px 0px 40px; /* LTR */
   position: relative;
-  background-color: #E9E8E8;
+ /* background-color: #E9E8E8;*/
+ background: #ffffff; /* Old browsers */
+ background: -moz-linear-gradient(top,  #ffffff 42%, #f2f2f2 100%); /* FF3.6+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+ background: -webkit-linear-gradient(top,  #ffffff 42%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+ background: -o-linear-gradient(top,  #ffffff 42%,#f2f2f2 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top,  #ffffff 42%,#f2f2f2 100%); /* IE10+ */
+ background: linear-gradient(to bottom,  #ffffff 42%,#f2f2f2 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+ 
 }
 #branding nav.breadcrumb {
   font-size: 75%;
@@ -348,7 +357,8 @@ ul.primary {
 ul.primary li {
   float: left; /* LTR */
   list-style: none;
-  margin: 0 1px 0 0;
+  /*margin: 0 1px 0 0;*/
+  margin: 0 2px 0 0;
 }
 ul.primary li a:link,
 ul.primary li a.active,
@@ -361,12 +371,15 @@ ul.primary li.active a {
   height: 2.60em;
   line-height: 2.60em;
   padding: 0 18px 2px;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
+  background-color:#E8E8E6;
   color: #757575;
   font-weight: normal;
   border-width: 1px 1px 0 1px;
   border-style: solid;
-  border-color: #f7f7f7;
+ /* border-color: #f7f7f7;*/
+  border-color: #E8E8E6;
+  transition: background-color 0.6s ease;
 }
 ul.primary li.active a,
 ul.primary li.active a.active,
@@ -374,11 +387,13 @@ ul.primary li.active a:active,
 ul.primary li.active a:visited {
   background-color: #fff;
   color: #000;
-  border-color: #f7f7f7;
+ /* border-color: #f7f7f7;*/
+ border-color:#fff;
   font-weight: bold;
 }
 ul.primary li a:hover {
   color: #000;
+  background-color: #E0E0E0;
 }
 ul.primary li.active a:hover {
   color: #000;
@@ -398,7 +413,8 @@ ul.primary li:last-child a {
 }
 ul.secondary {
   float: right; /* LTR */
-  font-size: 0.923em;
+  /*font-size: 0.923em;*/
+  
   padding: 0 3px 5px;
   line-height: 1.385em;
   overflow: hidden;
