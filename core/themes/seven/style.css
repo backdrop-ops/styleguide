@@ -373,13 +373,15 @@ ul.primary li.active a {
   padding: 0 18px 2px;
   /*background-color: #f7f7f7;*/
   background-color:#E8E8E6;
+  transition: background-color 0.5s ease, color 0.5s ease;
   color: #757575;
+  
   font-weight: normal;
   border-width: 1px 1px 0 1px;
   border-style: solid;
  /* border-color: #f7f7f7;*/
   border-color: #E8E8E6;
-  transition: background-color 0.6s ease;
+  
 }
 ul.primary li.active a,
 ul.primary li.active a.active,
@@ -393,7 +395,7 @@ ul.primary li.active a:visited {
 }
 ul.primary li a:hover {
   color: #000;
-  background-color: #E0E0E0;
+  background-color: #d8d8d8;
 }
 ul.primary li.active a:hover {
   color: #000;
@@ -414,35 +416,53 @@ ul.primary li:last-child a {
 ul.secondary {
   float: right; /* LTR */
   /*font-size: 0.923em;*/
-  
+  font-size: 80%;
+  font-weight:600;
   padding: 0 3px 5px;
   line-height: 1.385em;
   overflow: hidden;
   background-color: #fff;
+  letter-spacing:.3px;
 }
 ul.secondary li {
   margin: 0 5px;
   float: none; /* LTR */
 }
 ul.secondary li a {
-  background-color: #e3e2e2;
-  color: #000;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  /*background-color: #e3e2e2;*/
+  border: solid 2px #e3e2e2;
+  color: #444b53;
   display: inline-block;
 }
 ul.secondary li a,
 ul.secondary li a:hover,
 ul.secondary li.active a,
 ul.secondary li.active a.active {
-  padding: 2px 12px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+ /* padding: 2px 12px;*/
+ padding: 5px 14px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 ul.secondary li a:hover,
 ul.secondary li.active a,
 ul.secondary li.active a.active {
-  color: #fff;
-  background: #666;
+ /* color: #fff;*/
+  color: #000;
+ /* background: #666;*/
+  background:#e3e2e2;
 }
+
+ul.secondary li.active a,
+ul.secondary li.active a.active {
+ 
+ border: solid 1px #e3e2e2;
+
+ 
+}
+
+
+
 #content {
   clear: left;
 }
