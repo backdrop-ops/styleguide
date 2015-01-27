@@ -9,7 +9,8 @@
  */
 
 #admin-bar {
-  font: normal 11px "Lucida Grande", Verdana, sans-serif;
+  /*font: normal 11px "Lucida Grande", Verdana, sans-serif;*/
+  font: normal 12px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   left: 0;
   position: absolute;
   text-align: left; /* LTR */
@@ -66,6 +67,8 @@ body.admin-bar {
   float: left;
   width: auto;
 }
+
+@media DISABLED {
 #admin-bar-menu.top-level > li > ul > li > a.active-trail {
   text-shadow: #333 0 1px 0;
   background: #9F9F9F; /* Old browsers */
@@ -77,6 +80,14 @@ body.admin-bar {
   background: linear-gradient(#9F9F9F 0%, #808080 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9F9F9F', endColorstr='#808080',GradientType=0); /* IE6-9 */
 }
+}
+
+#admin-bar-menu.top-level > li > ul > li > a.active-trail {
+  
+  background: #858381; /* Old browsers */
+  
+}
+
 
 /* Dropdown lists */
 #admin-bar .dropdown {
@@ -90,12 +101,25 @@ body.admin-bar {
   background: #202020;
   vertical-align: top;
 }
+
+@media DISABLED {
+	#admin-bar li > a,
+	#admin-bar li > span {
+	  background: transparent none;
+	  border: none;
+	  color: #EEE;
+	  font-weight: normal;
+	  text-align: left; /* LTR */
+	  text-decoration: none;
+	}
+}
+
 #admin-bar li > a,
 #admin-bar li > span {
   background: transparent none;
   border: none;
-  color: #EEE;
-  font-weight: normal;
+  color: #FFF;
+  font-weight: 300;
   text-align: left; /* LTR */
   text-decoration: none;
 }
@@ -103,10 +127,20 @@ body.admin-bar {
 [dir="rtl"] #admin-bar li > span {
   text-align: right;
 }
+
+/*
 #admin-bar .dropdown li > a,
 #admin-bar .dropdown li > span {
   display: block;
   padding: 9px 12px;
+}
+*/
+
+#admin-bar .dropdown li > a,
+#admin-bar .dropdown li > span {
+  display: block;
+  padding: 11px 12px;
+  letter-spacing:.5;
 }
 
 #admin-bar a.expanded-trail,
