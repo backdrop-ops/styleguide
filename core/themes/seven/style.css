@@ -448,7 +448,7 @@ div.messages {
   background-image: none;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 5px 5px 5px 50px; /* LTR */
+  /*padding: 5px 5px 5px 50px; */ /* LTR */ 
   position: relative;
   line-height: 2em;
 }
@@ -456,13 +456,15 @@ div.messages span {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5px 7px;
+  /*padding: 5px 7px;*/
   margin-right: 10px;
   -moz-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
+  height:100%;
 }
 div.messages i.fa {
   color: #fff;
+  padding:10px;
 }
 div.status,
 table tr.ok {
@@ -475,6 +477,7 @@ div.status,
 }
 div.status span {
   background-color: #CFDE56;
+ 
 }
 div.warning,
 table tr.warning {

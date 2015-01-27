@@ -376,7 +376,7 @@ div.messages {
   background-repeat: no-repeat;
   border: 1px solid;
   margin: 6px 0;
-  padding: 10px 10px 10px 50px; /* LTR */
+  padding: 10px 10px 10px 70px; /* LTR */
 }
 
 div.status {
@@ -422,7 +422,8 @@ div.error p.error {
 }
 
 div.messages ul {
-  margin: 0 0 0 1em; /* LTR */
+ /* margin: 0 0 0 1em;*/ /* LTR */
+ margin:0 0 0 0;
   padding: 0;
 }
 div.messages ul li {
