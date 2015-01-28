@@ -67,7 +67,7 @@ dl dl {
 }*/
 
 blockquote {padding: 10px 0 10px 0px;  width: 80%; margin:0 auto;}
-blockquote p {border-left: 2px solid #577da4; padding-left: 19px; font-size: 95%; line-height: 175%;}
+blockquote p {border-left: 2px solid #BDBDBD; padding:20px; font-size: 95%; line-height: 175%; background-color:#fafafa;}
 
 address {
   font-style: italic;
