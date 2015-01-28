@@ -5,8 +5,10 @@ body {
   color: #000;
   background: #fff;
  /* font: normal 81.3%/1.538em "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; */
-  font: normal 16px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: normal;
   font-size:16px;
+  
 }
 
 b {
@@ -1151,6 +1153,7 @@ div.add-or-remove-shortcuts {
   float: left;
   width: 600px;
   height: 570px;
+  padding-bottom: 110px;
 }
 /*  .styleguide-column1of2-block {
   left: 0;
