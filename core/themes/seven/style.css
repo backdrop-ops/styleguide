@@ -3,7 +3,7 @@
  */
 body {
   color: #000;
-  background: #fff;
+  background: #fafafa;
  /* font: normal 81.3%/1.538em "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; */
   font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-weight: normal;
@@ -69,7 +69,7 @@ dl dl {
 }*/
 
 blockquote {padding: 10px 0 10px 0px;  width: 80%; margin:0 auto;}
-blockquote p {border-left: 2px solid #BDBDBD; padding:20px; font-size: 95%; line-height: 175%; background-color:#fafafa;}
+blockquote p {border-left: 2px solid #BDBDBD; padding:20px 30px; font-size: 95%; line-height: 175%; background-color:#fff;}
 
 address {
   font-style: italic;
@@ -257,6 +257,9 @@ pre {
 /**
  * Branding.
  */
+
+
+@media HIDDEN {
 #branding {
   overflow: hidden;
   padding: 33px 40px 0px 40px; /* LTR */
@@ -271,7 +274,18 @@ pre {
  background: linear-gradient(to bottom,  #ffffff 42%,#f2f2f2 100%); /* W3C */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
  
-}
+ }}
+
+ #branding {
+   overflow: hidden;
+   padding: 33px 40px 0px 40px; /* LTR */
+   position: relative;
+  /* background-color: #E9E8E8;*/
+  background: #F0F0F0; /* Old browsers */
+  
+ 
+  }
+
 #branding nav.breadcrumb {
   font-size: 75%;
   padding-bottom: 5px 0;
@@ -374,7 +388,7 @@ ul.primary li.active a {
   line-height: 2.60em;
   padding: 0 18px 2px;
   /*background-color: #f7f7f7;*/
-  background-color:#E8E8E6;
+  background-color:#dbdbd9;
   transition: background-color 0.5s ease, color 0.5s ease;
   color: #757575;
   
@@ -389,7 +403,7 @@ ul.primary li.active a,
 ul.primary li.active a.active,
 ul.primary li.active a:active,
 ul.primary li.active a:visited {
-  background-color: #fff;
+  background-color: #fafafa;
   color: #000;
  /* border-color: #f7f7f7;*/
  border-color:#fff;
@@ -397,7 +411,7 @@ ul.primary li.active a:visited {
 }
 ul.primary li a:hover {
   color: #000;
-  background-color: #d8d8d8;
+  background-color: #c5c5c3;
 }
 ul.primary li.active a:hover {
   color: #000;
@@ -423,7 +437,7 @@ ul.secondary {
   padding: 0 3px 5px;
   line-height: 1.385em;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #fafafa;
   letter-spacing:.3px;
 }
 ul.secondary li {
@@ -476,7 +490,7 @@ ul.secondary li.active a.active {
   padding: 20px 0 40px 0; /* LTR */
   margin-right: 40px; /* LTR */
   margin-left: 40px; /* LTR */
-  background: #fff;
+  background: #fafafa;
   position: relative;
  /* color: #333; */ /*dag*/
   color: #444b53;
@@ -817,7 +831,7 @@ div.teaser-checkbox .form-item,
 }
 .form-item label {
   margin: 0;
-  padding: 0;
+  padding: 0 0 10px 0;
 }
 .form-item label.option {
   font-size: 0.923em;
@@ -946,7 +960,7 @@ textarea.form-textarea {
     font-weight: 400;
     font-size: 100%;
     color: #444b53;
-    background: #f9f9f9;
+    background: #fff;
     border: 2px solid #D0D0D0;
     border-radius: 4px;
 /*	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
