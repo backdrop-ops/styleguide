@@ -406,7 +406,7 @@ ul.primary li.active a:visited {
   background-color: #fafafa;
   color: #000;
  /* border-color: #f7f7f7;*/
- border-color:#fff;
+ border-color:#fafafa;
   font-weight: bold;
 }
 ul.primary li a:hover {
@@ -883,21 +883,26 @@ body div.form-type-checkbox div.description {
 input.form-submit,
 a.button {
   cursor: pointer;
-  padding: 5px 17px;
+  padding: 10px 15px;
   margin-bottom: 1em;
   margin-right: 1em; /* LTR */
-  color: #5a5a5a;
+  color: #444b53;
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1.077em;
-  border: 1px solid #e4e4e4;
+  font-size: 100%;
+  /*border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
   border-left-color: #d2d2d2;
   border-right-color: #d2d2d2;
-  background: url(images/buttons.png) 0 0 repeat-x;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  background: url(images/buttons.png) 0 0 repeat-x;*/
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  letter-spacing:.4px;
+  /*background-color:#e7e7e5;*/
+  background-color:#e5e5e6;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  
 }
 a.button:link,
 a.button:visited,
@@ -908,15 +913,22 @@ a.button:active {
 }
 input#edit-submit,
 input#edit-submit-1 {
+  transition: background-color 0.6s ease, color 0.6s ease;
   background-image: none;
-  background-color: #007BBC;
-  border-color: #007BBC;
+  background-color: #0494DB;
+  border-color: #0494DB;
   color: #fff;
 }
 input#edit-submit:hover,
-input#edit-submit-1:hover {
+input#edit-submit-1:hover
+{
   background-color: #0C5E89;
 }
+
+#edit-preview:hover {
+	background-color:#EEEFBD;
+}
+
 input.form-submit:active {
   background: #666;
   color: #fff;
@@ -929,6 +941,10 @@ input.form-button-disabled:active {
   border-color: #eee;
   text-shadow: none;
   color: #999;
+}
+
+#edit-preview:hover{
+	
 }
 /*
 input.form-autocomplete,
@@ -961,22 +977,28 @@ textarea.form-textarea {
     font-size: 100%;
     color: #444b53;
     background: #fff;
-    border: 2px solid #D0D0D0;
+   /* border: 2px solid #D0D0D0;*/
     border-radius: 4px;
 /*	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
 	-moz-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
 	box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);*/
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
+	box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
 	
 }
+
+#edit-managed-file-upload{margin:0 20px 0 0 ;}
+
 select.form-select{
     
     font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
     font-weight: 400;
     font-size: 90%;
     color: #000;
-    background: #EEEEEF;
+    background: #e5e5e6;
     border-radius: 4px;
-	border: solid 4px #eeeeef;
+	border: solid 4px #e5e5e6;
 }
 /*
 input.form-autocomplete,
@@ -999,6 +1021,8 @@ select.form-select {
     clear: both;
 }
 */
+
+
 
 input.form-text:focus,
 input.form-tel:focus,

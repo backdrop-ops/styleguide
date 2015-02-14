@@ -171,7 +171,7 @@ table {
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 textarea {
   font-size: 1em;
