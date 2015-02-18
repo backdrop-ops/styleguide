@@ -91,7 +91,8 @@ tr.even .form-item {
 }
 label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
+  color:#000;
 }
 label.option {
   display: inline;

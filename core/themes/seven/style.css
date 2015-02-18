@@ -148,8 +148,39 @@ ul,
 */ /*insert character hack*/
 
 .item-list .pager li {
-  padding: 0.5em;
+  padding: 7px 15px;
+  background-color: #e5e5e6;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin:0 1px;
+  
 }
+
+.item-list .pager li:hover {
+  background-color: #444b53;
+  color:#fff;
+  
+}
+
+.item-list .pager li a:hover {
+  color:#fff;
+  
+}
+
+
+.item-list .pager li.pager-current{
+  background-color: #444b53;
+  color:#fff;
+}
+
+.item-list .pager li a{
+  color:#444b53;
+}
+.item-list .pager li a:hover{
+  text-decoration:none;
+}
+
 
 /*
 .item-list ul li,
@@ -823,6 +854,14 @@ div.teaser-checkbox .form-item,
   margin: 0;
   border: 0;
 }
+
+.form-item.form-item-date-month,
+.form-item.form-item-date-day,
+.form-item.form-item-date-year {
+	margin:0 5px 0 0;
+	
+}
+
 .form-type-checkbox {
   padding: 0;
 }
@@ -883,7 +922,7 @@ body div.form-type-checkbox div.description {
 input.form-submit,
 a.button {
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 10px 25px;
   margin-bottom: 1em;
   margin-right: 1em; /* LTR */
   color: #444b53;
@@ -912,7 +951,8 @@ a.button:active {
   color: #5a5a5a;
 }
 input#edit-submit,
-input#edit-submit-1 {
+input#edit-submit-1
+ {
   transition: background-color 0.6s ease, color 0.6s ease;
   background-image: none;
   background-color: #0494DB;
@@ -920,12 +960,14 @@ input#edit-submit-1 {
   color: #fff;
 }
 input#edit-submit:hover,
-input#edit-submit-1:hover
-{
+input#edit-submit-1:hover {
   background-color: #0C5E89;
 }
 
-#edit-preview:hover {
+#edit-preview:hover, 
+#edit-managed-file-upload-button:hover,
+#edit-button:hover,
+input#edit-submit--2:hover {
 	background-color:#EEEFBD;
 }
 
