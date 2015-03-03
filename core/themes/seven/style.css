@@ -115,51 +115,22 @@ acronym {
   border-bottom: dotted 1px;
 }
 
-/*
 ul,
 .block ul,
 .item-list ul {
   list-style-type: disc;
-  
   list-style-image: none;
-  margin: 0.25em 0 0.25em 1.5em;
-  line-height:150%;
+  margin: 0.25em 0 0.25em 2em;
+  line-height: 160%;
 }
-*/ 
 
-
-ul,
-.block ul,
-.item-list ul {
-  list-style-type: none;
-  
-  list-style-image: none;
-  margin: 0.25em 0 0.25em 1em;
-  line-height:160%;
-  } /* font awesome bullets*/
-
-
-/*
-
-ul,
-.block ul,
-.item-list ul {
-  list-style-type: none;
-  list-style-image: none;
-  margin:0;
-  padding:0;
-  line-height:150%;
-}
-*/ /*insert character hack*/
-
-.item-list .pager li a{
+.item-list .pager li a {
   padding: 7px 15px;
   background-color: #e5e5e6;
   transition: background-color 0.6s ease, color 0.6s ease;
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin:0 1px;
-  
 }
 
 .item-list .pager li a:hover {
@@ -198,48 +169,12 @@ ul,
   text-decoration:none;
 }
 
-
-/*
 .item-list ul li,
 li.leaf,
 ul.menu li {
   list-style-type: disc;
   list-style-image: none;
 }
-*/
-
-.item-list ul li,
-li.leaf,
-ul.menu li {
-  list-style-type: none;
-  list-style-image: none;
-  } /*font awesome bullets*/
-
-  
-  
-.fa-li {font-size: 45%;
-top: 34%;
-left: -5%;
-text-align: left;}  
-
-.fa-li.fa-circle {color: #8F9398;} 
-
-
-/*
-.item-list ul li,
-li.leaf,
-ul.menu li {
-  padding-left: 1em; 
-  text-indent: -.7em;
-}
-
-.item-list ul li:before,
-li.leaf:before,
-ul.menu li:before {
-  content: "•";
-  color: red;
-}
-*/ /*insert character hack*/
 
 ul.menu li {
   margin: 0;
@@ -247,7 +182,7 @@ ul.menu li {
 ol {
   list-style-type: decimal;
   margin: 0.25em 0 0.25em 2em; /* LTR */
-  line-height:160%;
+  line-height: 160%;
 }
 .item-list ul li.collapsed,
 ul.menu li.collapsed {
