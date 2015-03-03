@@ -33,21 +33,35 @@ legend {
   font-weight: bold;
 }
 
-h1 {font-weight:600; font-size:215%; color:#000;}
-h2 {font-weight:700; font-size:130%; color:#000;}
-h3 {font-weight:700; font-size:100%; color:#000;}
-h4 {font-weight:700; font-size:85%; color:#000;}
-h5 {font-weight:700; font-size:65%; color:#000;}
-h5 {font-weight:700; font-size:50%; color:#000;}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  /*font-weight: bold;*/ /*dag*/
   margin: 20px 0 10px 0;
+  font-weight: 700;
+  color: #000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 250%;
+}
+h2 {
+  font-size: 180%;
+}
+h3 {
+  font-size: 140%;
+}
+h4 {
+  font-size: 120%;
+}
+h5 {
+  font-size: 110%;
+}
+h6 {
+  font-size: 100%;
 }
 
 p {
@@ -122,6 +136,7 @@ ul,
   list-style-image: none;
   margin: 0.25em 0 0.25em 2em;
   line-height: 160%;
+  
 }
 
 .item-list .pager li a {
@@ -319,15 +334,12 @@ pre {
 /**
  * Page title.
  */
-#page-title {
-  background: #333;
-  padding-top: 20px;
+h1.page-title {
+  font-size: 215%;
 }
 #branding h1.page-title {
   color: #000;
- /* margin-top: 10px; */  /*dag*/
- 	
-  margin-top:0;	
+  margin-top:0;
   padding-bottom: 10px;
   float: left; /* LTR */
 }
