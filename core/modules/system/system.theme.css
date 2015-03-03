@@ -427,10 +427,9 @@ div.error p.error {
 }
 
 div.messages ul {
- /* margin: 0 0 0 1em;*/ /* LTR */
- margin:0 0 0 0;
+  margin: 0 0 0 1em; /* LTR */
   padding: 0;
 }
 div.messages ul li {
-  list-style-image: none;
+  list-style-type: disc;
 }
