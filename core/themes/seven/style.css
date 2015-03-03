@@ -12,7 +12,7 @@ body {
 }
 
 b {
-	color:#000;
+  color:#000;
 }
 
 a {
@@ -167,9 +167,9 @@ ul,
 }
 
 .item-list .pager li.pager-current {
-	padding: 7px 15px;
-	 background-color: #444b53;
-	 color:#fff;
+  padding: 7px 15px;
+   background-color: #444b53;
+   color:#fff;
      transition: background-color 0.6s ease, color 0.6s ease;
      -moz-border-radius: 4px;
      border-radius: 4px;
@@ -216,7 +216,7 @@ code {
 code,
 pre,
 kbd {
-  font-size: 1.231em;
+  font-size: 1em;
 }
 pre {
   margin: 0.5em 0;
@@ -822,8 +822,8 @@ div.teaser-checkbox .form-item,
 .form-item.form-item-date-month,
 .form-item.form-item-date-day,
 .form-item.form-item-date-year {
-	margin:0 5px 0 0;
-	
+  margin:0 5px 0 0;
+  
 }
 
 .form-type-checkbox {
@@ -932,7 +932,7 @@ input#edit-submit-1:hover {
 #edit-managed-file-upload-button:hover,
 #edit-button:hover,
 input#edit-submit--2:hover {
-	background-color:#CFDE56;
+  background-color:#CFDE56;
 }
 
 input.form-submit:active {
@@ -950,7 +950,7 @@ input.form-button-disabled:active {
 }
 
 #edit-preview:hover{
-	
+  
 }
 /*
 input.form-autocomplete,
@@ -985,13 +985,13 @@ textarea.form-textarea {
     background: #fff;
    /* border: 2px solid #D0D0D0;*/
     border-radius: 4px;
-/*	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
-	-moz-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
-	box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);*/
-	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-	-moz-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-	box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-	
+/*  -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
+  -moz-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);*/
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
+  box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
+  
 }
 
 #edit-managed-file-upload{margin:0 20px 0 0 ;}
@@ -1004,7 +1004,7 @@ select.form-select{
     color: #000;
     background: #e5e5e6;
     border-radius: 4px;
-	border: solid 4px #e5e5e6;
+  border: solid 4px #e5e5e6;
 }
 /*
 input.form-autocomplete,
