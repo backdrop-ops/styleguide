@@ -64,12 +64,17 @@ dl dl {
   margin-bottom: 10px;
 }
 
-/*blockquote {
-  margin: 1em 40px;
-}*/
-
-blockquote {padding: 10px 0 10px 0px;  width: 80%; margin:0 auto;}
-blockquote p {border-left: 2px solid #BDBDBD; padding:20px 30px; font-size: 95%; line-height: 175%; background-color:#fff;}
+blockquote {
+  padding: 5px 30px;
+  width: 80%;
+  background-color: #fff;
+  margin: 20px auto;
+  border-left: 2px solid #BDBDBD;
+}
+blockquote * {
+  font-size: 95%;
+  line-height: 175%;
+}
 
 address {
   font-style: italic;
