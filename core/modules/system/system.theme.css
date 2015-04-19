@@ -111,7 +111,13 @@ input.form-checkbox,
 input.form-radio {
   vertical-align: middle;
 }
-.marker,
+span.marker {
+  display: inline-block;
+  background-color: #e5e5e6;
+  border-radius: 4px;
+  padding: 0 .5em;
+  font-size: .9em;
+}
 .form-required {
   color: #f00;
 }
