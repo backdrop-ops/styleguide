@@ -9,7 +9,6 @@
  *
  * @see autocomplete.js
  */
-/* Suggestion list */
 #autocomplete {
   border: 1px solid;
   overflow: hidden;
@@ -31,12 +30,19 @@
 }
 /* Animated throbber */
 .js input.form-autocomplete {
-  background-image: url(../../misc/throbber.gif);
-  background-position: 100% 2px; /* LTR */
+  background-image: url(../../misc/throbber-inactive.png);
+  background-position: 99% center; /* LTR */
   background-repeat: no-repeat;
 }
+[dir="rtl"] .js input.form-autocomplete {
+  background-position: 1% center;
+}
 .js input.throbbing {
-  background-position: 100% -18px; /* LTR */
+  background-image: url(../../misc/throbber-active.gif);
+  background-position: 99% center; /* LTR */
+}
+[dir="rtl"] .js input.throbbing {
+  background-position: 1% center;
 }
 
 /**

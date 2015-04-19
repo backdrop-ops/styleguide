@@ -1012,12 +1012,6 @@ textarea:focus {
   -moz-box-shadow: 0 0 5px rgba(220, 220, 220, 1);
   box-shadow: 0 0 5px rgba(220, 220, 220, 1);
 }
-.js input.form-autocomplete {
-  background-position: 100% 4px;
-}
-.js input.throbbing {
-  background-position: 100% -16px;
-}
 ul.action-links {
   margin: 1em 0;
   padding: 0 20px 0 20px; /* LTR */
