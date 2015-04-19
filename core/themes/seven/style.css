@@ -940,102 +940,77 @@ input.form-button-disabled:active {
   color: #999;
 }
 
-#edit-preview:hover{
-  
+#edit-managed-file-upload {
+  margin:0 20px 0 0;
 }
-/*
-input.form-autocomplete,
-input.form-text,
-input.form-tel,
-input.form-email,
-input.form-file,
-textarea.form-textarea,
+
 select.form-select {
-  padding: 2px;
-  border: 1px solid #ccc;
-  border-top-color: #999;
-  background: #fff;
-  color: #333;
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
-}
-*/
-input.form-autocomplete,
-input.form-text,
-input.form-tel,
-input.form-email,
-input.form-file,
-textarea.form-textarea {
-
-    padding: 10px 20px;
-    font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    color: #444b53;
-    background: #fff;
-   /* border: 2px solid #D0D0D0;*/
-    border-radius: 4px;
-/*  -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
-  -moz-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);
-  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.06);*/
-  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-  -moz-box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-  box-shadow: inset 0px 0px 0px 2px rgba(208,208,208,1);
-  
-}
-
-#edit-managed-file-upload{margin:0 20px 0 0 ;}
-
-select.form-select{
-    
-    font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-    font-weight: 400;
-    font-size: 90%;
-    color: #000;
-    background: transparent;
-    border-radius: 4px;
+  font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: 400;
+  font-size: 90%;
+  color: #000;
+  background: transparent;
+  border-radius: 4px;
   border: solid 3px rgba(255,255,255,0);
+
   -webkit-box-shadow:  0px 0px 0px 2px rgba(208,208,208,1);
   -moz-box-shadow:  0px 0px 0px 2px rgba(208,208,208,1);
   box-shadow:  0px 0px 0px 2px rgba(208,208,208,1);
 }
-/*
-input.form-autocomplete,
-input.form-text,
-input.form-tel,
-input.form-email,
-input.form-file,
-textarea.form-textarea,
-select.form-select {
-    background: #f5f5f5;
-    font-size: 0.8rem;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: none;
-    padding: 13px 10px;
-    width: 270px;
-    margin-bottom: 20px;
-    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
-    clear: both;
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="email"],
+input[type="file"],
+textarea {
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  padding: 10px;
+  color: #444b53;
+  background: #fff;
+  border-radius: 4px;
+  border: 2px solid rgba(208,208,208,1);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
-*/
 
-
-
-input.form-text:focus,
-input.form-tel:focus,
-input.form-email:focus,
-input.form-file:focus,
-textarea.form-textarea:focus,
-select.form-select:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+  outline: 0;
   color: #000;
-  border-color: rgba(0, 116, 189, 0.8);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(220, 220, 220, 0.4);
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(220, 220, 220, 0.4);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(220, 220, 220, 0.4);
-  outline-color: rgba(0, 116, 189, 0.5);
+  border-color: rgba(4, 148, 219, 0.75);
+  -webkit-box-shadow: 0 0 5px rgba(220, 220, 220, 1);
+  -moz-box-shadow: 0 0 5px rgba(220, 220, 220, 1);
+  box-shadow: 0 0 5px rgba(220, 220, 220, 1);
 }
 .js input.form-autocomplete {
   background-position: 100% 4px;
