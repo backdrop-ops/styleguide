@@ -3,33 +3,35 @@
 /**
  * Toggle the visibility of a fieldset using smooth animations.
  */
-Drupal.toggleFieldset = function (fieldset) {
+Backdrop.toggleFieldset = function (fieldset) {
   var $fieldset = $(fieldset);
   if ($fieldset.is('.collapsed')) {
     var $content = $('> .fieldset-wrapper', fieldset).hide();
     $fieldset
       .removeClass('collapsed')
-      .trigger({ type: 'collapsed', value: false })
-      .find('> legend span.fieldset-legend-prefix').html(Drupal.t('Hide'));
+      .find('> legend span.fieldset-legend-prefix').html(Backdrop.t('Hide'));
     $content.slideDown({
       duration: 'fast',
       easing: 'linear',
       complete: function () {
-        Drupal.collapseScrollIntoView(fieldset);
+        Backdrop.collapseScrollIntoView(fieldset);
+        $fieldset.trigger({ type: 'collapsed', value: false });
+        $(window).triggerHandler('resize');
         fieldset.animating = false;
       },
       step: function () {
         // Scroll the fieldset into view.
-        Drupal.collapseScrollIntoView(fieldset);
+        Backdrop.collapseScrollIntoView(fieldset);
       }
     });
   }
   else {
-    $fieldset.trigger({ type: 'collapsed', value: true });
     $('> .fieldset-wrapper', fieldset).slideUp('fast', function () {
       $fieldset
         .addClass('collapsed')
-        .find('> legend span.fieldset-legend-prefix').html(Drupal.t('Show'));
+        .find('> legend span.fieldset-legend-prefix').html(Backdrop.t('Show'));
+      $fieldset.trigger({ type: 'collapsed', value: true });
+      $(window).triggerHandler('resize');
       fieldset.animating = false;
     });
   }
@@ -38,7 +40,7 @@ Drupal.toggleFieldset = function (fieldset) {
 /**
  * Scroll a given fieldset into view as much as possible.
  */
-Drupal.collapseScrollIntoView = function (node) {
+Backdrop.collapseScrollIntoView = function (node) {
   var h = document.documentElement.clientHeight || document.body.clientHeight || 0;
   var offset = document.documentElement.scrollTop || document.body.scrollTop || 0;
   var posY = $(node).offset().top;
@@ -53,13 +55,14 @@ Drupal.collapseScrollIntoView = function (node) {
   }
 };
 
-Drupal.behaviors.collapse = {
+Backdrop.behaviors.collapse = {
   attach: function (context, settings) {
+    var hasHash = location.hash && location.hash != '#' && $(window).find(location.hash).length;
     $('fieldset.collapsible', context).once('collapse', function () {
       var $fieldset = $(this);
       // Expand fieldset if there are errors inside, or if it contains an
       // element that is targeted by the URI fragment identifier.
-      var anchor = location.hash && location.hash != '#' ? ', ' + location.hash : '';
+      var anchor = hasHash ? ', ' + location.hash : '';
       if ($fieldset.find('.error' + anchor).length) {
         $fieldset.removeClass('collapsed');
       }
@@ -67,7 +70,7 @@ Drupal.behaviors.collapse = {
       var summary = $('<span class="summary"></span>');
       $fieldset.
         bind('summaryUpdated', function () {
-          var text = $.trim($fieldset.drupalGetSummary());
+          var text = $.trim($fieldset.backdropGetSummary());
           summary.html(text ? ' (' + text + ')' : '');
         })
         .trigger('summaryUpdated');
@@ -77,9 +80,9 @@ Drupal.behaviors.collapse = {
       var $legend = $('> legend .fieldset-legend', this);
 
       $('<span class="fieldset-legend-prefix element-invisible"></span>')
-        .append($fieldset.hasClass('collapsed') ? Drupal.t('Show') : Drupal.t('Hide'))
+        .append($fieldset.hasClass('collapsed') ? Backdrop.t('Show') : Backdrop.t('Hide'))
         .prependTo($legend)
-        .after(' ');
+        .after(document.createTextNode(' '));
 
       // .wrapInner() does not retain bound events.
       var $link = $('<a class="fieldset-title" href="#"></a>')
@@ -90,7 +93,7 @@ Drupal.behaviors.collapse = {
           // Don't animate multiple times.
           if (!fieldset.animating) {
             fieldset.animating = true;
-            Drupal.toggleFieldset(fieldset);
+            Backdrop.toggleFieldset(fieldset);
           }
           return false;
         });
