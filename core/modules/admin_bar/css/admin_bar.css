@@ -8,35 +8,8 @@
  * @see www.htmldog.com/articles/suckerfish
  */
 
-
-@media DISABLED {
-	#admin-bar {
-	  /*font: normal 11px "Lucida Grande", Verdana, sans-serif;*/
-	  font: normal 12px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	  left: 0;
-	  position: absolute;
-	  text-align: left; /* LTR */
-	  top: 0;
-	  width: 100%;
-	  line-height: 1;
-	  padding: 0;
-	  margin: 0;
-	  z-index: 999;
-	  background: #2D2D2D; /* Old browsers */
-	  background: -moz-linear-gradient(#2D2D2D 0%, #171717 100%); /* FF3.6+ */
-	  background: -webkit-gradient(color-stop(0%, #2D2D2D), color-stop(100%, #171717)); /* Chrome,Safari4+ */
-	  background: -webkit-linear-gradient(#2D2D2D 0%, #171717 100%); /* Chrome10+,Safari5.1+ */
-	  background: -o-linear-gradient(#2D2D2D 0%, #171717 100%); /* Opera 11.10+ */
-	  background: -ms-linear-gradient(#2D2D2D 0%, #171717 100%); /* IE10+ */
-	  background: linear-gradient(#2D2D2D 0%, #171717 100%); /* W3C */
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2D2D2D', endColorstr='#171717',GradientType=0); /* IE6-9 */
-	}
-	
-}
-
 #admin-bar {
-  /*font: normal 11px "Lucida Grande", Verdana, sans-serif;*/
-  font: normal 12px "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font: normal 11px "Lucida Grande", Verdana, sans-serif;
   left: 0;
   position: absolute;
   text-align: left; /* LTR */
@@ -46,11 +19,15 @@
   padding: 0;
   margin: 0;
   z-index: 999;
-  background-color: #000; /* Old browsers */
-  transition: background-color 0.5s ease;
- 
+  background: #2D2D2D; /* Old browsers */
+  background: -moz-linear-gradient(#2D2D2D 0%, #171717 100%); /* FF3.6+ */
+  background: -webkit-gradient(color-stop(0%, #2D2D2D), color-stop(100%, #171717)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(#2D2D2D 0%, #171717 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(#2D2D2D 0%, #171717 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(#2D2D2D 0%, #171717 100%); /* IE10+ */
+  background: linear-gradient(#2D2D2D 0%, #171717 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2D2D2D', endColorstr='#171717',GradientType=0); /* IE6-9 */
 }
-
 [dir="rtl"] #admin-bar {
   text-align: right;
 }
@@ -58,12 +35,12 @@
   overflow: hidden;
 }
 /* When body is a contextual links region. */
-.contextual-links-region #admin-menu {
-  top: -30px;
+.contextual-links-region #admin-bar {
+  top: -33px;
 }
 
-body.admin-bar {
-  margin-top: 30px !important;
+.admin-bar body {
+  border-top: 33px solid #2D2D2D !important;
 }
 
 /* Top level items. */
@@ -89,8 +66,6 @@ body.admin-bar {
   float: left;
   width: auto;
 }
-
-@media DISABLED {
 #admin-bar-menu.top-level > li > ul > li > a.active-trail {
   text-shadow: #333 0 1px 0;
   background: #9F9F9F; /* Old browsers */
@@ -102,14 +77,6 @@ body.admin-bar {
   background: linear-gradient(#9F9F9F 0%, #808080 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9F9F9F', endColorstr='#808080',GradientType=0); /* IE6-9 */
 }
-}
-
-#admin-bar-menu.top-level > li > ul > li > a.active-trail {
-  
-  background: #858381; /* Old browsers */
-  
-}
-
 
 /* Dropdown lists */
 #admin-bar .dropdown {
@@ -123,47 +90,23 @@ body.admin-bar {
   background: #202020;
   vertical-align: top;
 }
-
-@media DISABLED {
-	#admin-bar li > a,
-	#admin-bar li > span {
-	  background: transparent none;
-	  border: none;
-	  color: #EEE;
-	  font-weight: normal;
-	  text-align: left; /* LTR */
-	  text-decoration: none;
-	}
-}
-
 #admin-bar li > a,
 #admin-bar li > span {
   background: transparent none;
   border: none;
-  color: #FFF;
-  font-weight: 300;
+  color: #EEE;
+  font-weight: normal;
   text-align: left; /* LTR */
   text-decoration: none;
-  transition: background-color 0.5s ease;
 }
 [dir="rtl"] #admin-bar li > a,
 [dir="rtl"] #admin-bar li > span {
   text-align: right;
 }
-
-/*
 #admin-bar .dropdown li > a,
 #admin-bar .dropdown li > span {
   display: block;
   padding: 9px 12px;
-}
-*/
-
-#admin-bar .dropdown li > a,
-#admin-bar .dropdown li > span {
-  display: block;
-  padding: 11px 12px;
-  letter-spacing:.5;
 }
 
 #admin-bar a.expanded-trail,
@@ -187,7 +130,7 @@ body.admin-bar {
   border-left: none;
 }
 #admin-bar .dropdown a:hover {
-  background-color: #858381;
+  text-decoration: underline;
 }
 
 /* All dropdown list items */
@@ -326,6 +269,8 @@ body.admin-bar {
 #admin-bar .admin-bar-search input {
   background: #fff none center right no-repeat;
   border: none;
+  border-radius: 0;
+  box-shadow: none;
   font-size: 12px;
   margin: 0;
   outline: none;
