@@ -12,6 +12,7 @@
   @import url("core/misc/normalize.css?npwl1r");
   @import url("core/modules/system/css/system.css?npwl1r");
   @import url("core/modules/system/css/system.theme.css?npwl1r");
+  @import url("core/modules/system/css/messages.theme.css?npwl1r");
   </style>
   <style media="all">
   @import url("core/misc/ui/jquery.ui.core.css?npwl1r");
@@ -1137,7 +1138,10 @@
               <input type="hidden" name="form_id" value="styleguide_form" />
               <div class="form-actions" id="edit-actions">
                 <input class="primary button-primary form-submit" type="submit" id="edit-submit" name="op" value="Submit" />
-                <input class="button-secondary form-submit" type="submit" id="edit-preview" name="op" value="Preview" /><a href="#" class="danger button-secondary" id="edit-delete">Delete</a></div>
+                <input class="button-secondary form-submit" type="submit" id="edit-preview" name="op" value="Preview" />
+                <input class="button-danger form-submit" type="submit" id="edit-delete" name="op" value="Delete" />
+                <a href="#" id="edit-cancel">Cancel</a>
+              </div>
             </div>
           </form>
         </div>
@@ -1287,137 +1291,101 @@
           <form action="#" method="post" id="styleguide-form--4" accept-charset="UTF-8">
             <div>
               <h2 class="element-invisible">Vertical Tabs</h2>
-              <div class="vertical-tabs-panes">
-                <fieldset class="form-wrapper" id="edit-fieldset--2">
-                  <legend><span class="fieldset-legend">et eu tincidunt</span></legend>
-                  <div class="fieldset-wrapper">
-                    <div class="fieldset-description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
-                    <div class="form-item form-type-select form-item-select-fieldset">
-                      <label for="edit-select-fieldset--2">Select </label>
-                      <select id="edit-select-fieldset--2" name="select-fieldset" class="form-select">
-                        <option value="In elit feugiat">In elit feugiat</option>
-                        <option value="Mi ipsum mi">Mi ipsum mi</option>
-                        <option value="Sed duis urna">Sed duis urna</option>
-                        <option value="Amet aliquam nam">Amet aliquam nam</option>
-                        <option value="Magna ac dolor">Magna ac dolor</option>
-                      </select>
-                      <div class="description">Nulla non nulla nec metus rhoncus congue.</div>
-                    </div>
-                    <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset">
-                      <label for="edit-checkboxes-fieldset--2">Checkboxes </label>
-                      <div class="form-checkboxes" id="edit-checkboxes-fieldset--2">
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-In-elit-feugiat">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-in-elit-feugiat" name="checkboxes-fieldset[In elit feugiat]" value="In elit feugiat" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-in-elit-feugiat">In elit feugiat </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Mi-ipsum-mi">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-mi-ipsum-mi" name="checkboxes-fieldset[Mi ipsum mi]" value="Mi ipsum mi" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-mi-ipsum-mi">Mi ipsum mi </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Sed-duis-urna">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-sed-duis-urna" name="checkboxes-fieldset[Sed duis urna]" value="Sed duis urna" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-sed-duis-urna">Sed duis urna </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Amet-aliquam-nam">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-amet-aliquam-nam" name="checkboxes-fieldset[Amet aliquam nam]" value="Amet aliquam nam" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-amet-aliquam-nam">Amet aliquam nam </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Magna-ac-dolor">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-magna-ac-dolor" name="checkboxes-fieldset[Magna ac dolor]" value="Magna ac dolor" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-magna-ac-dolor">Magna ac dolor </label>
-                        </div>
-                      </div>
-                      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="collapsible collapsed form-wrapper" id="edit-fieldset-collapsed--2">
-                  <legend><span class="fieldset-legend">aliquam dictum eget</span></legend>
-                  <div class="fieldset-wrapper">
-                    <div class="fieldset-description">Sed viverra, quam non hendrerit laoreet, massa odio blandit arcu, ac molestie metus diam eu tortor.</div>
-                    <div class="form-item form-type-select form-item-select-fieldset-collapsed">
-                      <label for="edit-select-fieldset-collapsed--2">Select </label>
-                      <select id="edit-select-fieldset-collapsed--2" name="select-fieldset-collapsed" class="form-select">
-                        <option value="In elit feugiat">In elit feugiat</option>
-                        <option value="Mi ipsum mi">Mi ipsum mi</option>
-                        <option value="Sed duis urna">Sed duis urna</option>
-                        <option value="Amet aliquam nam">Amet aliquam nam</option>
-                        <option value="Magna ac dolor">Magna ac dolor</option>
-                      </select>
-                      <div class="description">Nulla non nulla nec metus rhoncus congue.</div>
-                    </div>
-                    <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsed">
-                      <label for="edit-checkboxes-fieldset-collapsed--2">Checkboxes </label>
-                      <div class="form-checkboxes" id="edit-checkboxes-fieldset-collapsed--2">
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-In-elit-feugiat">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsed-in-elit-feugiat" name="checkboxes-fieldset-collapsed[In elit feugiat]" value="In elit feugiat" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsed-in-elit-feugiat">In elit feugiat </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Mi-ipsum-mi">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsed-mi-ipsum-mi" name="checkboxes-fieldset-collapsed[Mi ipsum mi]" value="Mi ipsum mi" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsed-mi-ipsum-mi">Mi ipsum mi </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Sed-duis-urna">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsed-sed-duis-urna" name="checkboxes-fieldset-collapsed[Sed duis urna]" value="Sed duis urna" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsed-sed-duis-urna">Sed duis urna </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Amet-aliquam-nam">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsed-amet-aliquam-nam" name="checkboxes-fieldset-collapsed[Amet aliquam nam]" value="Amet aliquam nam" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsed-amet-aliquam-nam">Amet aliquam nam </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Magna-ac-dolor">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsed-magna-ac-dolor" name="checkboxes-fieldset-collapsed[Magna ac dolor]" value="Magna ac dolor" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsed-magna-ac-dolor">Magna ac dolor </label>
-                        </div>
-                      </div>
-                      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="collapsible form-wrapper" id="edit-fieldset-collapsible--2">
-                  <legend><span class="fieldset-legend">dignissim nam ut</span></legend>
-                  <div class="fieldset-wrapper">
-                    <div class="fieldset-description">Curabitur sed ante non quam fermentum vehicula.</div>
-                    <div class="form-item form-type-select form-item-select-fieldset-collapsible">
-                      <label for="edit-select-fieldset-collapsible--2">Select </label>
-                      <select id="edit-select-fieldset-collapsible--2" name="select-fieldset-collapsible" class="form-select">
-                        <option value="In elit feugiat">In elit feugiat</option>
-                        <option value="Mi ipsum mi">Mi ipsum mi</option>
-                        <option value="Sed duis urna">Sed duis urna</option>
-                        <option value="Amet aliquam nam">Amet aliquam nam</option>
-                        <option value="Magna ac dolor">Magna ac dolor</option>
-                      </select>
-                      <div class="description">Nulla non nulla nec metus rhoncus congue.</div>
-                    </div>
-                    <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsible">
-                      <label for="edit-checkboxes-fieldset-collapsible--2">Checkboxes </label>
-                      <div class="form-checkboxes" id="edit-checkboxes-fieldset-collapsible--2">
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-In-elit-feugiat">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsible-in-elit-feugiat" name="checkboxes-fieldset-collapsible[In elit feugiat]" value="In elit feugiat" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsible-in-elit-feugiat">In elit feugiat </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Mi-ipsum-mi">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsible-mi-ipsum-mi" name="checkboxes-fieldset-collapsible[Mi ipsum mi]" value="Mi ipsum mi" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsible-mi-ipsum-mi">Mi ipsum mi </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Sed-duis-urna">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsible-sed-duis-urna" name="checkboxes-fieldset-collapsible[Sed duis urna]" value="Sed duis urna" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsible-sed-duis-urna">Sed duis urna </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Amet-aliquam-nam">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsible-amet-aliquam-nam" name="checkboxes-fieldset-collapsible[Amet aliquam nam]" value="Amet aliquam nam" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsible-amet-aliquam-nam">Amet aliquam nam </label>
-                        </div>
-                        <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Magna-ac-dolor">
-                          <input type="checkbox" id="edit-checkboxes-fieldset-collapsible-magna-ac-dolor" name="checkboxes-fieldset-collapsible[Magna ac dolor]" value="Magna ac dolor" class="form-checkbox" />
-                          <label class="option" for="edit-checkboxes-fieldset-collapsible-magna-ac-dolor">Magna ac dolor </label>
-                        </div>
-                      </div>
-                      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    </div>
-                  </div>
-                </fieldset>
-                <input class="vertical-tabs-active-tab" type="hidden" name="vertical_tabs__active_tab" value="" />
+              <div class="vertical-tabs clearfix"><ul class="vertical-tabs-list"><li class="vertical-tab-item first vertical-tab-selected" tabindex="-1"><a href="#" class="vertical-tab-link"><strong>dignissim erat vitae</strong><span class="summary"></span><span id="active-vertical-tab" class="element-invisible">(active tab)</span></a></li><li class="vertical-tab-item" tabindex="-1"><a href="#" class="vertical-tab-link"><strong>eget et nunc</strong><span class="summary"></span></a></li><li class="vertical-tab-item last" tabindex="-1"><a href="#" class="vertical-tab-link"><strong>tortor convallis iaculis</strong><span class="summary"></span></a></li></ul><div class="vertical-tabs-panes vertical-tabs-processed"><fieldset class="form-wrapper vertical-tabs-pane vertical-tab-selected" id="edit-fieldset--2"><legend class="vertical-tab-link"><span class="fieldset-legend">dignissim erat vitae</span><span class="summary"></span></legend><div class="fieldset-wrapper"><div class="fieldset-description">Phasellus et ipsum quis sapien accumsan auctor.</div><div class="form-item form-type-select form-item-select-fieldset">
+                <label for="edit-select-fieldset--2">Select </label>
+               <select id="edit-select-fieldset--2" name="select-fieldset" class="form-select"><option value="Ac viverra magna">Ac viverra magna</option><option value="Est id magna">Est id magna</option><option value="Iaculis tortor cras">Iaculis tortor cras</option><option value="Vitae ac eros">Vitae ac eros</option><option value="Aliquam viverra eu">Aliquam viverra eu</option></select>
+              <div class="description">Suspendisse sit amet sem id libero auctor pharetra sit amet ut dui.</div>
+              </div>
+              <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset">
+                <label for="edit-checkboxes-fieldset--2">Checkboxes </label>
+               <div class="form-checkboxes" id="edit-checkboxes-fieldset--2"><div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Ac-viverra-magna">
+               <input id="edit-checkboxes-fieldset-ac-viverra-magna" name="checkboxes-fieldset[Ac viverra magna]" value="Ac viverra magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-ac-viverra-magna">Ac viverra magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Est-id-magna">
+               <input id="edit-checkboxes-fieldset-est-id-magna" name="checkboxes-fieldset[Est id magna]" value="Est id magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-est-id-magna">Est id magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Iaculis-tortor-cras">
+               <input id="edit-checkboxes-fieldset-iaculis-tortor-cras" name="checkboxes-fieldset[Iaculis tortor cras]" value="Iaculis tortor cras" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-iaculis-tortor-cras">Iaculis tortor cras </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Vitae-ac-eros">
+               <input id="edit-checkboxes-fieldset-vitae-ac-eros" name="checkboxes-fieldset[Vitae ac eros]" value="Vitae ac eros" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-vitae-ac-eros">Vitae ac eros </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-Aliquam-viverra-eu">
+               <input id="edit-checkboxes-fieldset-aliquam-viverra-eu" name="checkboxes-fieldset[Aliquam viverra eu]" value="Aliquam viverra eu" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-aliquam-viverra-eu">Aliquam viverra eu </label>
+
+              </div>
+              </div>
+              <div class="description">Vestibulum sit amet massa est.</div>
+              </div>
+              </div></fieldset>
+              <fieldset class="form-wrapper vertical-tabs-pane" id="edit-fieldset-collapsed--2"><legend class="vertical-tab-link"><span class="fieldset-legend">eget et nunc</span><span class="summary"></span></legend><div class="fieldset-wrapper"><div class="fieldset-description">Praesent porttitor ante non lacus suscipit porta.</div><div class="form-item form-type-select form-item-select-fieldset-collapsed">
+                <label for="edit-select-fieldset-collapsed--2">Select </label>
+               <select id="edit-select-fieldset-collapsed--2" name="select-fieldset-collapsed" class="form-select"><option value="Ac viverra magna">Ac viverra magna</option><option value="Est id magna">Est id magna</option><option value="Iaculis tortor cras">Iaculis tortor cras</option><option value="Vitae ac eros">Vitae ac eros</option><option value="Aliquam viverra eu">Aliquam viverra eu</option></select>
+              <div class="description">Suspendisse sit amet sem id libero auctor pharetra sit amet ut dui.</div>
+              </div>
+              <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsed">
+                <label for="edit-checkboxes-fieldset-collapsed--2">Checkboxes </label>
+               <div class="form-checkboxes" id="edit-checkboxes-fieldset-collapsed--2"><div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Ac-viverra-magna">
+               <input id="edit-checkboxes-fieldset-collapsed-ac-viverra-magna" name="checkboxes-fieldset-collapsed[Ac viverra magna]" value="Ac viverra magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsed-ac-viverra-magna">Ac viverra magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Est-id-magna">
+               <input id="edit-checkboxes-fieldset-collapsed-est-id-magna" name="checkboxes-fieldset-collapsed[Est id magna]" value="Est id magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsed-est-id-magna">Est id magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Iaculis-tortor-cras">
+               <input id="edit-checkboxes-fieldset-collapsed-iaculis-tortor-cras" name="checkboxes-fieldset-collapsed[Iaculis tortor cras]" value="Iaculis tortor cras" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsed-iaculis-tortor-cras">Iaculis tortor cras </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Vitae-ac-eros">
+               <input id="edit-checkboxes-fieldset-collapsed-vitae-ac-eros" name="checkboxes-fieldset-collapsed[Vitae ac eros]" value="Vitae ac eros" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsed-vitae-ac-eros">Vitae ac eros </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsed-Aliquam-viverra-eu">
+               <input id="edit-checkboxes-fieldset-collapsed-aliquam-viverra-eu" name="checkboxes-fieldset-collapsed[Aliquam viverra eu]" value="Aliquam viverra eu" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsed-aliquam-viverra-eu">Aliquam viverra eu </label>
+
+              </div>
+              </div>
+              <div class="description">Vestibulum sit amet massa est.</div>
+              </div>
+              </div></fieldset>
+              <fieldset class="form-wrapper vertical-tabs-pane" id="edit-fieldset-collapsible--2"><legend class="vertical-tab-link"><span class="fieldset-legend">tortor convallis iaculis</span><span class="summary"></span></legend><div class="fieldset-wrapper"><div class="fieldset-description">Suspendisse potenti.</div><div class="form-item form-type-select form-item-select-fieldset-collapsible">
+                <label for="edit-select-fieldset-collapsible--2">Select </label>
+               <select id="edit-select-fieldset-collapsible--2" name="select-fieldset-collapsible" class="form-select"><option value="Ac viverra magna">Ac viverra magna</option><option value="Est id magna">Est id magna</option><option value="Iaculis tortor cras">Iaculis tortor cras</option><option value="Vitae ac eros">Vitae ac eros</option><option value="Aliquam viverra eu">Aliquam viverra eu</option></select>
+              <div class="description">Suspendisse sit amet sem id libero auctor pharetra sit amet ut dui.</div>
+              </div>
+              <div class="form-item form-type-checkboxes form-item-checkboxes-fieldset-collapsible">
+                <label for="edit-checkboxes-fieldset-collapsible--2">Checkboxes </label>
+               <div class="form-checkboxes" id="edit-checkboxes-fieldset-collapsible--2"><div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Ac-viverra-magna">
+               <input id="edit-checkboxes-fieldset-collapsible-ac-viverra-magna" name="checkboxes-fieldset-collapsible[Ac viverra magna]" value="Ac viverra magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsible-ac-viverra-magna">Ac viverra magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Est-id-magna">
+               <input id="edit-checkboxes-fieldset-collapsible-est-id-magna" name="checkboxes-fieldset-collapsible[Est id magna]" value="Est id magna" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsible-est-id-magna">Est id magna </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Iaculis-tortor-cras">
+               <input id="edit-checkboxes-fieldset-collapsible-iaculis-tortor-cras" name="checkboxes-fieldset-collapsible[Iaculis tortor cras]" value="Iaculis tortor cras" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsible-iaculis-tortor-cras">Iaculis tortor cras </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Vitae-ac-eros">
+               <input id="edit-checkboxes-fieldset-collapsible-vitae-ac-eros" name="checkboxes-fieldset-collapsible[Vitae ac eros]" value="Vitae ac eros" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsible-vitae-ac-eros">Vitae ac eros </label>
+
+              </div>
+              <div class="form-item form-type-checkbox form-item-checkboxes-fieldset-collapsible-Aliquam-viverra-eu">
+               <input id="edit-checkboxes-fieldset-collapsible-aliquam-viverra-eu" name="checkboxes-fieldset-collapsible[Aliquam viverra eu]" value="Aliquam viverra eu" class="form-checkbox" type="checkbox">  <label class="option" for="edit-checkboxes-fieldset-collapsible-aliquam-viverra-eu">Aliquam viverra eu </label>
+
+              </div>
+              </div>
+              <div class="description">Vestibulum sit amet massa est.</div>
+              </div>
+              </div></fieldset>
+              <input class="vertical-tabs-active-tab" name="vertical_tabs__active_tab" value="" type="hidden">
+              </div></div>
               </div>
               <input type="hidden" name="form_build_id" value="form-8DSmTxCizv-4q8IgGMMxxzfW-TMicOAW-KO38K-2Xj4" />
               <input type="hidden" name="form_token" value="oLr7F1miLZF3_bByxoVFjn2PVMj65sQrflrMx2ZN7Zk" />
@@ -1435,7 +1403,8 @@
               <input type="hidden" name="form_token" value="W8cEBLhuxoiDokz_Y0xZinWmmFkRYkYO-_fXNYklDEg" />
               <input type="hidden" name="form_id" value="confirm_form" />
               <div class="form-actions" id="edit-actions--2">
-                <input class="button-danger button-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Confirm" /><a href="#" class="button-secondary" id="edit-cancel">Cancel</a></div>
+                <input class="button-danger button-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Confirm" />
+                <a href="#" id="edit-cancel">Cancel</a></div>
             </div>
           </form>
         </div>
