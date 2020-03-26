@@ -11,18 +11,15 @@
       @import url("core/misc/normalize.css?npwl1r");
       @import url("core/misc/opensans/opensans.css?npwl1r");
       @import url("core/modules/system/css/system.css?npwl1r");
-      @import url("core/modules/system/css/system.theme.css?npwl1r");
       @import url("core/modules/system/css/messages.theme.css?npwl1r");
     </style>
     <style media="all">
       @import url("core/misc/ui/jquery.ui.core.css?npwl1r");
-      @import url("core/themes/seven/css/jquery.ui.theme.css?npwl1r");
       @import url("core/misc/ui/jquery.ui.button.css?npwl1r");
       @import url("core/misc/ui/jquery.ui.draggable.css?npwl1r");
       @import url("core/misc/ui/jquery.ui.resizable.css?npwl1r");
       @import url("core/misc/ui/jquery.ui.dialog.css?npwl1r");
       @import url("core/misc/dialog.theme.css?npwl1r");
-      @import url("core/themes/seven/css/vertical-tabs.css?npwl1r");
       @import url("core/misc/dropbutton.css?npwl1r");
       @import url("core/misc/dropbutton.theme.css?npwl1r");
       @import url("core/modules/contextual/css/contextual.css?npwl1r");
@@ -41,11 +38,27 @@
       @import url("modules/styleguide/styleguide.css?npwl1r");
     </style>
     <style media="screen">
-      @import url("core/themes/seven/css/responsive-tabs.css?npwl1r");
-      @import url("core/themes/seven/css/seven.base.css?npwl1r");
-      @import url("core/themes/seven/css/style.css?npwl1r");
-      @import url("core/themes/seven/css/vertical-tabs.css?npwl1r");
-      @import url("core/themes/seven/css/views-admin.seven.css?npwl1r");
+      @import url("core/themes/basis/css/component/admin-tabs.css?npwl1r");
+      @import url("core/themes/basis/css/component/backdrop-form.css?npwl1r");
+      @import url("core/themes/basis/css/component/breadcrumb.css?npwl1r");
+      @import url("core/themes/basis/css/component/caption.css?npwl1r");
+      @import url("core/themes/basis/css/component/comment.css?npwl1r");
+      @import url("core/themes/basis/css/component/dialog.css?npwl1r");
+      @import url("core/themes/basis/css/component/fieldset.css?npwl1r");
+      @import url("core/themes/basis/css/component/footer.css?npwl1r");
+      @import url("core/themes/basis/css/component/header.css?npwl1r");
+      @import url("core/themes/basis/css/component/hero.css?npwl1r");
+      @import url("core/themes/basis/css/component/menu-dropdown.css?npwl1r");
+      @import url("core/themes/basis/css/component/menu-toggle.css?npwl1r");
+      @import url("core/themes/basis/css/component/pager.css?npwl1r");
+      @import url("core/themes/basis/css/component/progress.css?npwl1r");
+      @import url("core/themes/basis/css/component/small-text-components.css?npwl1r");
+      @import url("core/themes/basis/css/component/tabledrag.css?npwl1r");
+      @import url("core/themes/basis/css/component/teasers.css?npwl1r");
+      @import url("core/themes/basis/css/component/vertical-tabs.css?npwl1r");
+      @import url("core/themes/basis/css/base.css?npwl1r");
+      @import url("core/themes/basis/css/layout.css?npwl1r");
+      @import url("core/themes/basis/css/skin.css?npwl1r");
     </style>
     <script type="text/javascript">
       <!--//--><![CDATA[//><!--
@@ -285,16 +298,18 @@
             </ul>
           </div>
         </div>
+      </header>
+      <div class="l-top">
         <h1 class="title" id="page-title">Style guide</h1>
-        <div class="tabs">
+        <nav class="tabs" role="tablist" aria-label="Admin content navigation tabs.">
           <h2 class="element-invisible">Primary tabs</h2>
           <ul class="tabs primary">
-            <li><a href="basis.html">Basis</a></li>
+            <li class="active"><a href="#" class="active">Basis<span class="element-invisible">(active tab)</span></a></li>
             <li><a href="#">Aeon5</a></li>
             <li><a href="#">bare</a></li>
             <li><a href="#">Cleanish Theme</a></li>
             <li><a href="#">Radix</a></li>
-            <li class="active"><a href="#" class="active">Seven<span class="element-invisible">(active tab)</span></a></li>
+            <li><a href="index.html">Seven</a></li>
           </ul>
           <h2 class="element-invisible">Secondary tabs</h2>
           <ul class="tabs secondary">
@@ -304,9 +319,7 @@
             <li><a href="#">Third</a></li>
             <li><a href="#">Fourth</a></li>
           </ul>
-        </div>
-      </header>
-      <div class="l-top">
+        </nav>
         <div class="contextual-links-region block block-system-breadcrumb">
           <div class="contextual-links-wrapper">
             <ul class="contextual-links">
